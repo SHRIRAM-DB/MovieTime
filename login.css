@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  h1{
+    margin-left: 105px;
+  }
+   form { 
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 40px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  span {
+color: red;
+font-size: 12px;
+display: block;
+text-align: center;
+margin-bottom: 1px;
+}
+
+ 
+  button {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 33%;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-left: 100px;
+  }
+  button:disabled {
+    background-color: #ccc;
+  }
+
+
+  p{
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+  }
+
+  .see-password{
+    position: relative;
+    width: 100%;
+  }
+  
+    #show-password-toggle{
+      position: absolute;
+      margin-top: 14px;
+      right: 25px; 
+      cursor: pointer; 
+      color: #007BFF;
+    }
+  
+    a{
+      text-decoration: none;
+    }
