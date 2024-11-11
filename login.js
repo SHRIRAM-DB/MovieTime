@@ -30,67 +30,56 @@ const btn = document.getElementById("login-btn");
 const showPasswordToggle = document.getElementById("show-password-toggle");
 const passwordField = document.getElementById("password");
 
+// Toggle password visibility
 showPasswordToggle.addEventListener("click", () => {
-  // Toggle the password visibility
   const isPasswordVisible = passwordField.getAttribute("type") === "password";
   passwordField.setAttribute("type", isPasswordVisible ? "text" : "password");
-
-  // Update the toggle text
   showPasswordToggle.textContent = isPasswordVisible ? "Hide" : "Show";
 });
 
 form.addEventListener("submit", (event) => {
-    event.preventDefault();  // Prevent default form submission
+  event.preventDefault();  // Prevent default form submission
 
-    emailError.textContent = "";
-    passwordError.textContent = "";
+  // Clear any previous error messages
+  emailError.textContent = "";
+  passwordError.textContent = "";
 
-
-    if (!email.checkValidity()) {
-      if (email.validity.valueMissing){
-          emailError.textContent = "Email is required!";
-      } else if (email.validity.typeMismatch) {
-          emailError.textContent = "Please enter a valid email address!";
-      }
-      return;
+  // Validate email
+  if (!email.value) {
+    emailError.textContent = "Email is required!";
+    return;
+  } else if (!email.value.endsWith("@gmail.com")) {
+    emailError.textContent = "Only @gmail.com email addresses are allowed!";
+    return;
   }
 
-    // Basic validation for email format and password length
-    if (!email.value.endsWith("@gmail.com")) {
-        emailError.textContent = "Only @gmail.com email addresses are allowed!";
-        return;
-    }
+  // Validate password
+  if (!password.value) {
+    passwordError.textContent = "Password is required!";
+    return;
+  } else if (password.value.length < 7 || password.value.length > 15) {
+    passwordError.textContent = "Password must be 7-15 characters long!";
+    return;
+  }
 
-  
-    if (!password.checkValidity()) {
-        if (password.validity.valueMissing) {
-            passwordError.textContent = "Password is required!";
-        } else if (password.value.length < 7) {
-            passwordError.textContent = "Password must be 7-15 characters long!";
-        }
-        return;
-    }
+  // Firebase Authentication: Sign in with email and password
+  signInWithEmailAndPassword(auth, email.value, password.value)
+    .then((userCredential) => {
+      // Signed in successfully
+      const user = userCredential.user;
+      alert("Login successful!");
+      // Redirect to another page if needed
+      window.location.href = "/front.html";  // Update to your desired page
+    })
+    .catch((error) => {
+      const errorCode = error.code;
 
-    // Firebase Authentication: Sign in with email and password
-    signInWithEmailAndPassword(auth, email.value, password.value)
-        .then((userCredential) => {
-            // Signed in successfully
-            const user = userCredential.user;
-            alert("Login successful!");
-            // Redirect to another page if needed
-            window.location.href = "/front.html"; // Update to your desired page
-        })
-        .catch((error) => {
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            if (errorCode === "auth/user-not-found") {
-                emailError.textContent = "No user found with this email!";
-            } else if (errorCode === "auth/wrong-password") {
-                passwordError.textContent = "Incorrect password!";
-            } else {
-                // alert("Error: " + errorMessage);
-                //I'm add in extra
-                passwordError.textContent="The password or email is wrong.";
-            }
-        });
+      if (errorCode === "auth/user-not-found") {
+        emailError.textContent = "No user found with this email!";
+      } else if (errorCode === "auth/wrong-password") {
+        passwordError.textContent = "Incorrect password!";
+      } else {
+        passwordError.textContent = "The password or email is wrong.";
+      }
+    });
 });
