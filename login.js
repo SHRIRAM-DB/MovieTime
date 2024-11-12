@@ -83,3 +83,29 @@ form.addEventListener("submit", (event) => {
       }
     });
 });
+
+email.addEventListener("input", function() {
+  emailError.textContent = "";
+
+  // Regular expression for a valid Gmail address
+  const gmailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+
+  // Check if the email matches the regex pattern
+  if (!gmailRegex.test(email.value)) {
+    emailError.textContent = "Please enter a valid @gmail.com email address!";
+  } else {
+    emailError.textContent = ""; // Clear the error if the email is valid
+  }
+});
+
+
+password.addEventListener("input", function() {
+  passwordError.textContent = "";
+  
+  // Check if the passwords match
+  if (password.value.length < 7 || password.value.length > 15 ) {
+    passwordError.textContent = `Password must be at least ${password.minLength} characters`;
+  } else {
+    passwordError.textContent = ""; // Clear the error if passwords match
+  }
+});

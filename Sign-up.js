@@ -149,3 +149,52 @@ form.addEventListener("submit", function(event) {
       });
   }
 });
+
+name.addEventListener("input", function() {
+   nameError.textContent="";
+
+   if(name.value.length<4){
+    nameError.textContent = "Name must be at least 4 characters long!";
+   }
+   else{
+    nameError.textContent="";
+   }
+});
+
+email.addEventListener("input", function() {
+  emailError.textContent = "";
+
+  // Regular expression for a valid Gmail address
+  const gmailRegex = /^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+
+  // Check if the email matches the regex pattern
+  if (!gmailRegex.test(email.value)) {
+    emailError.textContent = "Please enter a valid @gmail.com email address!";
+  } else {
+    emailError.textContent = ""; // Clear the error if the email is valid
+  }
+});
+
+
+password.addEventListener("input", function() {
+  passwordError.textContent = "";
+  
+  // Check if the passwords match
+  if (password.value.length < 7 || password.value.length > 15 ) {
+    passwordError.textContent = `Password must be at least ${password.minLength} characters`;
+  } else {
+    passwordError.textContent = ""; // Clear the error if passwords match
+  }
+});
+
+
+conformPassword.addEventListener("input", function() {
+  conformPasswordError.textContent = "";
+  
+  // Check if the passwords match
+  if (conformPassword.value !== password.value) {
+    conformPasswordError.textContent = "Passwords do not match!";
+  } else {
+    conformPasswordError.textContent = ""; // Clear the error if passwords match
+  }
+});
