@@ -58,15 +58,13 @@ showConformPasswordToggle.addEventListener("click", () => {
 form.addEventListener("submit", function(event) {
   event.preventDefault(); 
 
-
+  // Clear previous error messages
   nameError.textContent = "";
   emailError.textContent = "";
   passwordError.textContent = "";
   conformPasswordError.textContent = "";
 
   let isValid = true; 
-
- 
 
   // Name validation
   if (!name.checkValidity()) {
@@ -81,8 +79,8 @@ form.addEventListener("submit", function(event) {
   // Basic validation for email format and password length
   if (!email.value.endsWith("@gmail.com")) {
     emailError.textContent = "Only @gmail.com email addresses are allowed!";
-    isValid=false;
-    }
+    isValid = false;
+  }
 
   // Email validation
   if (!email.checkValidity()) {
@@ -131,13 +129,18 @@ form.addEventListener("submit", function(event) {
         btn.disabled = false;
         btn.innerText = 'Create an account';
 
-        // Optionally, redirect to another page
+        // Set sign-up completion flag and redirect
+        localStorage.setItem("isSignedUp", "true");
         window.location.href = "/front.html"; // Redirect after successful sign-up
       })
       .catch((error) => {
         const errorMessage = error.message;
-        // Show error message
-        emailError.textContent = "The email is already used";
+
+        if (error.code === 'auth/email-already-in-use') {
+          emailError.textContent = "The email is already in use. Please try another email or log in.";
+        } else {
+          emailError.textContent = "An error occurred during sign-up. Please try again.";
+        }
         console.error('Error during sign up:', errorMessage);
 
         // Reset button state
