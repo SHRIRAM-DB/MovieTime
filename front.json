@@ -1,0 +1,22 @@
+{
+    "image": {
+      "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS30yCgOP5zppjnjPpBvnGuYr41WRjzE2qUFg&s",
+      "title": "Sample Image from Google",
+      "description": "A sample thumbnail image possibly related to a search result or article.",
+      "metadata": {
+        "source": "Google Image Search",
+        "dimensions": {
+          "width": "150px",
+          "height": "150px"
+        },
+        "file_format": "JPEG",
+        "thumbnail": true,
+        "category": "general",
+        "license": "Google Images preview license",
+        "alt_text": "A placeholder image from Google Image Search",
+        "tags": ["thumbnail", "preview", "encrypted image", "Google"],
+        "last_accessed": "2024-11-12"
+      }
+    }
+  }
+  

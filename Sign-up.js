@@ -38,8 +38,6 @@ showPasswordToggle.addEventListener("click", () => {
   // Toggle the password visibility
   const isPasswordVisible = passwordField.getAttribute("type") === "password";
   passwordField.setAttribute("type", isPasswordVisible ? "text" : "password");
-
-  // Update the toggle text
   showPasswordToggle.textContent = isPasswordVisible ? "Hide" : "Show";
 });
 
@@ -50,8 +48,6 @@ showConformPasswordToggle.addEventListener("click", () => {
   // Toggle the password visibility
   const isConformPasswordVisible = conformPasswordField.getAttribute("type") === "password";
   conformPasswordField.setAttribute("type", isConformPasswordVisible ? "text" : "password");
-
-  // Update the toggle text
   showConformPasswordToggle.textContent = isConformPasswordVisible ? "Hide" : "Show";
 });
 
@@ -66,7 +62,7 @@ form.addEventListener("submit", function(event) {
 
   let isValid = true; 
 
-  // Name validation
+ //name validation
   if (!name.checkValidity()) {
     if (name.validity.valueMissing) {
       nameError.textContent = "Name is required!";
@@ -76,7 +72,7 @@ form.addEventListener("submit", function(event) {
     isValid = false;
   }
 
-  // Basic validation for email format and password length
+ //Email validation with end
   if (!email.value.endsWith("@gmail.com")) {
     emailError.textContent = "Only @gmail.com email addresses are allowed!";
     isValid = false;
@@ -108,7 +104,7 @@ form.addEventListener("submit", function(event) {
     isValid = false;
   }
 
-  // Proceed with signup if the form is valid
+  
   if (isValid) {
     const emailValue = email.value;
     const passwordValue = password.value;
@@ -153,13 +149,16 @@ form.addEventListener("submit", function(event) {
 name.addEventListener("input", function() {
    nameError.textContent="";
 
-   if(name.value.length<4){
-    nameError.textContent = "Name must be at least 4 characters long!";
+   const nameRegex= /^(?!\d+$)[a-zA-Z0-9\s]+$/;
+
+   if(!nameRegex.test(name.value)){
+    nameError.textContent = "Please enter a valid name";
    }
    else{
     nameError.textContent="";
    }
 });
+
 
 email.addEventListener("input", function() {
   emailError.textContent = "";
@@ -174,6 +173,7 @@ email.addEventListener("input", function() {
     emailError.textContent = ""; // Clear the error if the email is valid
   }
 });
+
 
 
 password.addEventListener("input", function() {
@@ -198,3 +198,4 @@ conformPassword.addEventListener("input", function() {
     conformPasswordError.textContent = ""; // Clear the error if passwords match
   }
 });
+
