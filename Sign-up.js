@@ -147,17 +147,13 @@ form.addEventListener("submit", function(event) {
 });
 
 name.addEventListener("input", function() {
-   nameError.textContent="";
+  nameError.textContent = ""; // Clear the error message initially
 
-   const nameRegex= /^(?!\d+$)[a-zA-Z0-9\s]+$/;
-
-   if(!nameRegex.test(name.value)){
-    nameError.textContent = "Please enter a valid name";
-   }
-   else{
-    nameError.textContent="";
-   }
+  if (name.value.length < 4) { // Check if the input length is less than 4
+      nameError.textContent = "Name must be at least 4 characters long!";
+  }
 });
+
 
 
 email.addEventListener("input", function() {
@@ -195,7 +191,7 @@ conformPassword.addEventListener("input", function() {
   if (conformPassword.value !== password.value) {
     conformPasswordError.textContent = "Passwords do not match!";
   } else {
-    conformPasswordError.textContent = ""; // Clear the error if passwords match
+    conformPasswordError.textContent = ""; 
   }
 });
 
