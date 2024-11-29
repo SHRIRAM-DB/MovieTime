@@ -113,6 +113,7 @@ form.addEventListener("submit", function(event) {
     btn.disabled = true;
     btn.innerText = 'Creating account...';
 
+    
     // Firebase Authentication sign-up
     createUserWithEmailAndPassword(auth, emailValue, passwordValue)
       .then((userCredential) => {
@@ -155,7 +156,6 @@ name.addEventListener("input", function() {
 });
 
 
-
 email.addEventListener("input", function() {
   emailError.textContent = "";
 
@@ -174,7 +174,6 @@ email.addEventListener("input", function() {
 
 password.addEventListener("input", function() {
   passwordError.textContent = "";
-  
   // Check if the passwords match
   if (password.value.length < 7 || password.value.length > 15 ) {
     passwordError.textContent = `Password must be at least ${password.minLength} characters`;
@@ -191,7 +190,30 @@ conformPassword.addEventListener("input", function() {
   if (conformPassword.value !== password.value) {
     conformPasswordError.textContent = "Passwords do not match!";
   } else {
-    conformPasswordError.textContent = ""; 
+    conformPasswordError.textContent = ""; // Clear the error if passwords match
   }
 });
 
+// Get references to input field and button
+const usernameInput = document.getElementById("name");
+const saveButton = document.getElementById("savebutton");
+
+// Save username to localStorage when the button is clicked
+saveButton.addEventListener("click", () => {
+  const username = usernameInput.value.trim(); // Get the input value
+  if (username) {
+    localStorage.setItem("username", username); // Save to localStorage
+    alert("Username saved successfully!");
+  } else {
+    alert("Please enter a username.");
+  }
+});
+
+window.addEventListener("load", () => {
+  const isLoggedIn = localStorage.getItem("isLoggedIn");
+
+  // Redirect if logged in
+  if (isLoggedIn === "true") {
+    window.location.href = "front.html";
+  }
+});
