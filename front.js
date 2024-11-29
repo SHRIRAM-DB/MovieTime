@@ -17,7 +17,6 @@ window.addEventListener("click", function(event) {
 // Logout functionality
 const logoutButton = document.getElementById("logoutButton");
 logoutButton.addEventListener("click", function() {
-    localStorage.removeItem("username");
     sessionStorage.clear();
 
     alert("Logged out successfully!");
