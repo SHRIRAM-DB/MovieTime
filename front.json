@@ -1,0 +1,314 @@
+{ 
+  "category": {
+      "thriller":[
+  {
+    "movie_name": "Vikram",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNt53KSYiZCc4y5pgwTgAauk4smVgi42I9qLiTuXAWhxLxSycB1na6u7cF3OUUYpQMQlw&usqp=CAU"
+  },
+  {
+    "movie_name": "Ratsasan",
+    "image_url": "https://m.media-amazon.com/images/M/MV5BMTlmNjA3OWYtYjUyYy00MzM0LWI0MTktOTgxYmFlZmY1NmRmXkEyXkFqcGc@._V1_QL75_UX1230_.jpg"
+  },
+  {
+    "movie_name": "Kaithi",
+    "image_url": "https://wallpapercave.com/wp/wp4871559.jpg"
+  },
+  {
+    "movie_name": "Aramm",
+    "image_url": "https://m.media-amazon.com/images/M/MV5BMWY2NmI2NzMtNzZkYy00OGY3LWE1ZmYtMmU0N2VlYjg2MTAyXkEyXkFqcGc@._V1_QL75_UX1230_.jpg"
+  },
+  { 
+    "movie_name": "Valimai",
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvfjBuj7wpagK97_IBDU2n0xxEdvFFsQp_VqeSwmbr0JvriaADF69QYswDyBoqNWERxAmnKw"
+  },
+  {
+    "movie_name": "Soorarai Pottru",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo4iIf2Aq7anWNhHHSddCq3Yapg_OxZKgsyGLM7KIlycDpYaoWHJR7oXauyHUYz6dTff0&usqp=CAU"
+  },
+  {
+    "movie_name": "Psycho",
+    "image_url": "https://m.media-amazon.com/images/M/MV5BNjYxZjMyMGMtZjQ4Yi00NzJjLWE4M2EtYmVjNzFhOGI0MmQyXkEyXkFqcGc@._V1_QL75_UX1230_.jpg"
+  },
+  {
+    "movie_name": "Kolaigaran",
+    "image_url": "https://c.saavncdn.com/232/Kolaigaran-Tamil-2019-20190311171955-500x500.jpg"
+  },
+  {
+    "movie_name": "Karnan",
+    "image_url": "https://m.media-amazon.com/images/M/MV5BYmVmNGQ0ZDEtMGVlYS00NGY4LWEzYTMtMmNmNjQ5NWIwMTgxXkEyXkFqcGc@._V1_QL75_UX1230_.jpg"
+  },
+  {
+    "movie_name": "Vikram Vedha",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgSyw7jYoAYPowm2uTSvjFKsUYnFuQR9mb-asueGIjaPtFLMAJz6blJsVjedcPD4DWywfu&s"
+  },
+  {
+    "movie_name": "Miruthan",
+    "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlabVX-eh49HeGPBjSZXXBHXALoPAiCcY3cBYIk1SfQFNaJ7SVPpWbnPxJwhFSGR60GrzEoQ"
+  },
+  {
+    "movie_name": "Papanasam",
+    "image_url": "https://www.tallengestore.com/cdn/shop/files/Papanasam-KamalHaasan-TamilMoviePoster_09a6e9d3-412b-4ac3-8f54-b6efe0b1f900.jpg?v=1714521513"
+  },
+  {
+    "movie_name": "Thadam",
+    "image_url": "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/thadam-et00082524-27-08-2018-04-17-45.jpg"
+  },
+  {
+    "movie_name": "Black",
+    "image_url": "https://static.moviecrow.com/movies/0-black/233597-233594-Black-px214.jpg"
+  },
+  {
+    "movie_name": "Trip",
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjqjzaK8yEuzYZCwqf_1UfEOYON5mlYzNXRpOCssot7vE9Z3Ww0hSIQSpiUe3okMtVwO8XLQ"
+  }
+],
+"horror":[
+  {
+    "movie_name": "Demonte Colony 2",
+    "image_url": "https://akamaividz2.zee5.com/image/upload/w_336,h_504,c_scale,f_webp,q_auto:eco/resources/0-0-1z5625693/portrait/1920x770fc58f4ed700c48a5b5ba477cecd3c1f5.jpg"
+  },
+  {
+    "movie_name":"Airaa",
+    "image_url": "https://www.postoast.com/wp-content/uploads/2021/09/Airaa-tamil-horror-movie.jpg"
+  },
+  {
+    "movie_name": "Diary",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP1DduXvp-zgrhIR0ohrLsvgEQL63Ioegj6KZ_4zHDAxLfdL6viTUx6-ameeUECVxzF9o&usqp=CAU"
+  },
+  {
+    "movie_name": "Lift",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQWlC0rU77hEA4kx6SCROua16m5cEFO38HjA&s"
+  },
+  {
+    "movie_name": "Pisasu",
+    "image_url": "https://images.odishatv.in/uploadimage/library/16_9/16_9_1/Pisasu__1720760892.webp"
+  },
+  {
+    "movie_name": "Maya",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9CYwVsjz6DEbtQ8IApk31X8RqpAGyjyQRnvUnfeNIkOwPlSmp2e8Z6xleBFpMJVEs2MxBSA"
+  },
+  {
+    "movie_name": "Pizza III",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPLCDgxGW8L2__M8ZpE7_tz1wPSjt_5ztYRN2EU04jTqxeQdLwo6RRojJwcU0NSH7Dq0g&usqp=CAU"
+  },
+  {
+    "movie_name": "U Turn",
+    "image_url": "https://static.toiimg.com/photo/65795962.cms?imgsize=84835"
+   },
+   {
+    "movie_name": "Nenjam Marappathillai",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD8SHaqTEohqRNz6AH5k2UMYt6HH6jq2ukrg&s"
+   },
+   {
+    "movie_name": "Sync",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGM72EZgxJLVd-dmCv0O-XiLnnmKOw2CxGfXY0mj9CKDXHWrVTPNGPTHbj6guYB18pRFs&usqp=CAU"
+   },
+   {
+    "movie_name": "Asvins",
+    "image_url": "https://m.media-amazon.com/images/M/MV5BMWIzZjAwNTAtMmQ5My00YzdlLTlkNDAtZWNlYTMwOWI0YTJjXkEyXkFqcGc@._V1_.jpg"
+   },
+   {
+    "movie_name": "Katteri",
+    "image_url": "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/katteri-et00082038-19-08-2018-11-28-32.jpg"
+   },
+   {
+    "movie_name": "Bramayagam",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQgAj69RPTNvN6rc04dgK_UMLLC1HZtMVj_jUfkX9XQkF2OSVR0O2fKeXkTqlt0b3hwOA&usqp=CAU"
+   },
+   {
+    "movie_name": "Estate",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/c/c8/Estate_%282022_film%29.jpg"
+   },
+   {
+     "movie_name": "Game Over",
+     "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcCHG9-bj8URtWm76ulCeDr61zieA8VOQ17fN21r2YP6tz0g5WUmMBW--PNwH29t9LFB2Z"
+   }
+],
+"action":[
+  {
+    "movie_name": "Vada Chennai",
+    "image_url": "https://m.media-amazon.com/images/S/pv-target-images/88df90537821ac4ee9530814fff1056772f83f68a776995d13aa57cf825b6252.jpg"
+  }, 
+  {
+    "movie_name": "Asuran",
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTYMuo3sNkiHRedVvnvD9_3ZSf9pYj_KMC4fmvLHMMFHwDkbT-1C3etZ5NYz3--1oYxxDgaA"
+  }, 
+  {
+    "movie_name": "Sarpatta Parambarai",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgp6ch_2ZHEVC7XqoRullLmsagqu4A1TIuW-0WOFnHIQFfEkhnJNgtgwk8bRPBrGXAhmIQ"
+  },
+  {
+    "movie_name": "Thunivu",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb9Ooe29DBoMcUgKWCqMLu5RrfYBeID1mAVleOGl9yHH8RSrCNlUYcXCyt3i7pQgjniVlD"
+  }, 
+  {
+    "movie_name": "Jailer",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDg4IkitIG8cCq4VvLx4JDDrGBhr39RkJpWjru13tywmTexYkBHb65nzwLELUgaMvvpXYl"
+  }, 
+  {
+    "movie_name": "Vettaiyan",
+    "image_url": "https://m.media-amazon.com/images/M/MV5BMjc2MGY3NGEtZGYyZC00MmIyLThjMjMtZGZhYmYzNzJhYTJjXkEyXkFqcGc@._V1_QL75_UX145_.jpg"
+  }, 
+  {
+    "movie_name": "Leo",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZorcQ8q5HnwPB8MfA2I7-_BLk92pyAYlV5GPh9RvyznAjCBCzHs7LwdNVnJ3eELehoQSk"
+  }, 
+  {
+    "movie_name": "Jigarthanda Double X",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdyO2NnXnXxfXsQMdgCfLw_mWRgr_tQzPc6XfcqY_14ow3bjNdGvFab0hCCCIlL9J91INj"
+  }, 
+  {
+    "movie_name": "Master",
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRswG6NZHowsW-JNXViNEDWtLlhbU2hezeURZYUP-h_Azckt1z5pLLBcua_SPRUXLCzuDs6Yw"
+  }, 
+  {
+    "movie_name": "Beast",
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCaeMM1WoEb5Rf6xL7MkwSOz7AsvUu8IF4uj7HeF3M-zaZBaPRmilpjpAfZK4_WQ7CVzuT"
+  }, 
+  {
+    "movie_name": "Captain Miller",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeYaFj8tnsMrxv5yjk2LtOS-1LbRmPVSL2c3FPO4NPgYykYtwvQEd8sr-dvJww17O8hrRG"
+  }, 
+  {
+    "movie_name": "Thani Oruvan",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIo6arI5yPMNpFRTF1Qgy-khg7yThN1zhtNzyRLbjMhUobuQNytamBUEM1i8qJUTI1K2Zq"
+  }, 
+  {
+    "movie_name": "Mahaan",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZzjhzt0OjAkJ8gOLrc15d8boAx7Eqg8cIuBAbQduKpYV-R1e8--ZX7_vnKWY747nlf2xmow"
+  }, 
+  {
+    "movie_name": "Maharaja",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpbkEsutNLSiwujaN7Dq5ZVsde1LJ-F7yaP7uwMTQ8UWVxSM5yxPGq40OwI-rHUrKYNx46"
+  }, 
+  {
+    "movie_name": "Raayan",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/e/e4/Raayan_poster.jpg"
+  }
+],
+"comedy":[
+  {
+    "movie_name": "kalakalappu 2",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfIE4bR5roW1BcQ68K-2t0hBcP_qcJ_ryMw0527aFg54VgNFZvH70opKqx2oAr_BYMINan2w"
+  }, 
+  {
+    "movie_name": "Mark Antony",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxLuXYOke3LVVab-L2S69U-TtWXbyfSEBiqOStErShoLPDXetHsTjltmL2nYMegr_MySyF"
+  }, 
+  {
+    "movie_name": "Remo",
+    "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiE6ZxNXhtXo6Z8gmOHGgubShjQuFzEuIGAnQsdC__-H4uBYisTpcDi2vcLA01XdsRPPQ7"
+  }, 
+  {
+    "movie_name": "Don",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSzPSchTlpBxjPw2HM4pMvV5ZZxHkglHS1vxhVTsLTpxkHVNolZnryhmqTFsNGOWUPG4lS"
+  }, 
+  {
+    "movie_name": "Doctor",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt0frOrnLgcANTtvmCGgZ9-hRqNu0JO-7q9-SPgpYjhPWwQu_I0PwVWThhF4G_El-bdxJw"
+  }, 
+  {
+    "movie_name": "Comali",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmI3l_RpteRjHy9dl2-_8G5dbRVIk4mt8_xA9nR84QvH4DRtLAhMZQhOsGu6TTu4_-3PAzjg"
+  }, 
+  {
+    "movie_name": "Zombie",
+    "image_url": "https://m.media-amazon.com/images/M/MV5BMjU4YmUwMzQtNjFhOS00NWEwLThhOTUtMWY2MGZhODE3YzljXkEyXkFqcGc@._V1_.jpg"
+  }, 
+  {
+    "movie_name": "Gurkha",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKV-RRYedQBLcBYh--QEc9Dzt-BQ0veLXYIVn7_kF7rnLM17oYzDbvup2zwXnrUExPs8Wn"
+  }, 
+  {
+    "movie_name": "DD Returns",
+    "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXK-RL9t-96yvGlix6l6MvQL1DwuBGsWZPao3OJuRsofUg6Ie61ZITd8RaXxFfrhvjZVQRBw"
+  }, 
+  {
+    "movie_name": "Maragadha Naanayam",
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ610sNI4thLDMfab--0oI_OWQ6mWHHjh8eC-EHcXh62esoyci6_Lg2aB6lwkh4Y_02dg9apg"
+  }, 
+  {
+    "movie_name": "Dhilluku Dhuddu 2",
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQppEfm-U2xtdZSjhShSP5I9tLpDb_QAgVJ6oDvTF-KhnwYhaSKJwO_h7gMPbLMMU38NyJO"
+  }, 
+  {
+    "movie_name": "Dhilluku Dhuddu",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFt_rXZGImbiZJ1TKpCta7WK24ZsLd_9XO5qijCRNvNqr-ujhDCdEe-ViTOc26Gq9CWnXFyA"
+  }, 
+  {
+    "movie_name": "Naai Sekar Returns",
+    "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzoPS0Fg5lPhEmp3Zi5QxMUTGkw02tXZ9lI_2lTtAUBWfvaw6s2XRaopcoH40qGmyfC29CIQ"
+  }, 
+  {
+    "movie_name": "Dikkiloona",
+    "image_url": "https://m.media-amazon.com/images/M/MV5BMzgwYjA5ZDktOWVjZi00ZDM5LTk2ZDctYjgyNjQzZTIyNGZhXkEyXkFqcGc@._V1_.jpg"
+  }, 
+  {
+    "movie_name": "Varalaru Mukkiyam",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrbfhapNLRreTW95Se9xRjKEqObh5jXySD7-R5MWvnQyNkmXSj0_YSMoT0TmBusFa23QQ3"
+  }
+],
+"romance":[
+  {
+    "movie_name": "Adiyae",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdBshSpI1DIbbfPedunvx87CYPUUXbpA5wTEvbDOmTA-E6l0bifMfRlEW1AvHAVyolXpIZIw"
+  },
+  {
+    "movie_name": "Star",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Star_%28film%29_poster.jpg/220px-Star_%28film%29_poster.jpg"
+  },
+  {
+    "movie_name": "Thiruchitrambalam",
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlCZsI24nQ7UhiCORtJY740JAjZaslgx_WZQgAMIIkDVgxL6pJjh0ZJqmSW92opfYbSUlY"
+  },
+  {
+    "movie_name": "Sita Ramam",
+    "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7tf85dhFPzs8gTFz9NfLnc0U9pWuiB8mZwFvhYl5hl_1ZNH-0LdKCdq0tDOKdFyFLXXsRxg"
+  },
+  {
+    "movie_name": "Hey Sinamika",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9MwVbHejIZWty99t0eXGok4VX-xFKZxJN82rhVgoypySjF8ghuEJISDypOSz5rIUNciektQ"
+  },
+  {
+    "movie_name": "Love Today",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYCDEOR1wh7xLRlS71MhE0JCMp7VTu3cFt-HIFfl6txMeHsb3tJXsTUHQKstdBtxl546MEhA"
+  },
+  {
+    "movie_name": "Romeo",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHZbhbCPzXKO4ZTkUM_9hpAUzD4FkIDs6mJc-6ZtLO08GXCtYthKSCVJJt8Zn3CmkvgGQY_w"
+  },
+  {
+    "movie_name": "O Kadhal Kanmani",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbbOVbgHzKYQTJ0AfZqNcZa2PMpD3NW0J48mk0L5zqXlFxrW_0F0BdcH7WWXDx2RaiBYu2_w"
+  },
+  {
+    "movie_name": "Sivakumarin Sabadham",
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8Xi9RhEPHm66qBvklU0C34IdtEnHYliKQPrqCSrYThILbniyg_2muXS5eZ32s_1G0zv-f"
+  },
+  {
+    "movie_name": "Kannum Kannum Kollaiyadithaal",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5PqyIUIeI5Bscnj8YfZ9ky-oyU8nU256c4IDFKEBz1Dl-x2icWRvZrsIpPePoBx_5pgMr-w"
+  },
+  {
+    "movie_name": "Rasavathi",
+    "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHsd6czWHtX4RmfgMyWNlHd0EBXradBpIbURIb4RR81S14rEjwakDvIiStx44GN9poAGk36A"
+  },
+  {
+    "movie_name": "Saba Nayagan",
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGKf3Bt26jjhe9TS1LbSnH4TdyPcAy1Vn23aZQ8zjOjv5Zg2PGYaClnOXBxtDJeHKlVYj7Ww"
+  },
+  {
+    "movie_name": "Jeeva",
+    "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0K9svVxnAvKsDU0WfW1ziZrnyiXa9Y9n1kWQ-AOJobl_uBxMjiZjc0ufJYqRqxFhwoJp9"
+  },
+  {
+    "movie_name": "Kaathuvaakula Rendu Kaadhal",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEl9Y6o0zPek-zhD1nRBsRyvozaYwYuOue34WxtJRuPMoQLGw-BRSJfuIOHyz8AcjsU4pwQ"
+  },
+  {
+    "movie_name": "Anegan",
+    "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSe_gsrXGoy4sf8fFUKy4agw3qUctwETgxnLre9wJgs94BC1XHJfK-888OXAQHdXaDRKTJFEw"
+  }
+]
+}
+}

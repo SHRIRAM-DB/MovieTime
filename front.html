@@ -1,32 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/front.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/front.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <title>MOVIE TIME</title>
+    <script src="/front.js" defer type="module"></script>
+  </head>
+  <body>
     <header>
-        <div class="header">
-        <img src="/assets/image/Screenshot 2024-11-03 123034.png" alt="ott-logo" class="logo">
+      <div class="head">
+      <div class="header">
+        <img
+          src="/assets/image/Screenshot 2024-11-03 123034.png"
+          alt="ott-logo"
+          class="logo"
+        />
         <h1 class="ott-name">MOVIE TIME</h1>
-        
         <div class="search-container">
-            <input type="text" class="search" placeholder="Search...">
-            <button type="submit" class="search-btn"><i class="fa fa-search"></i></button>
+          <input type="text" class="search" placeholder="Search..." />
+          <button type="submit" class="search-btn">
+            <i class="fa fa-search"></i>
+          </button>
         </div>
-        <img src="/assets/image/11349247.png" alt="Profile" class="Profile"  id="profileIcon">
+        <div id="resultBox" class="result-box">
+
+        </div>
+        <img
+          src="/assets/image/11349247.png"
+          alt="Profile"
+          class="Profile"
+          id="profileIcon"
+        />
         <div id="profileDropdown" class="dropdown-content">
-            <p id="usernameDisplay">Shriram</p>
-          
-            <button id="logoutButton">Logout</button>
+          <p id="usernameDisplay"></p>
+          <button id="logoutButton">Logout</button>
         </div>
-    </div>
-    <div class="line"></div>
+      </div>
+      <div class="line"></div>
+      </div>
     </header>
+
+    <div class="slider-container">
+      <h1 id="prevButton">❮ </h1>
+    <div class="movie_slide_container" id="movieSlideContainer">
+
+    </div>
+    <h1 id="nextButton">❯</h1>
+</div>
+
+      <!-- thriller movie heading -->
+      <div class="heading_and_icon">
+        <h2 id="thriller">Thriller Movies</h2>
+      </div>
+      
+      <!-- thriller movie rendering -->
+      <div class="carousel">
+        <button id="thrillerPrevButton" class="carousel-button">‹</button>
+      <div class="thriller_movie_container" id="thrillerMoviesContainer">
+      
+      </div>
+      <button id="thrillerNextButton" class="carousel-button">›</button>
+    </div>
+
+      <!-- horror movie heading -->
+      <div class="heading_and_icon">
+          <h2 id="horror">Horror Movies</h2>
+      </div>
+
+      <!-- horror movie rendering -->
+      <div class="carousel">
+        <button id="horrorPrevButton" class="carousel-button">‹</button>
+      <div class="horror_movie_container" id="horrorMovieContainer">
+
+      </div>
+      <button id="horrorNextButton" class="carousel-button">›</button>
+    </div>
+
+      <!-- action movie heading -->      
+      <div class="heading_and_icon">
+        <h2 id="action">Action Movies</h2>
+    </div>
+
+ <!-- action movie rendering -->
+ <div class="carousel">
+  <button id="actionPrevButton" class="carousel-button">‹</button>
+    <div class="action_movie_container" id="actionMovieContainer">
+
+    </div>
+    <button id="actionNextButton" class="carousel-button">›</button>
+  </div>
+  
+    <!-- comedy movie heading -->
+    <div class="heading_and_icon">
+      <h2 id="comedy">Comedy Movies</h2>
+  </div>
    
-<script src="/front.js"></script>
-</body>
+  <!-- comedy movie rendering -->
+  <div class="carousel">
+    <button id="comedyPrevButton" class="carousel-button">‹</button>
+  <div class="comedy_movie_container" id="comedyMovieContainer">
+
+  </div>
+  <button id="comedyNextButton" class="carousel-button">›</button>
+  </div>
+
+  <!-- romance movie heading -->
+  <div class="heading_and_icon">
+    <h2 id="romance">Romance Movies</h2>
+</div>
+
+<!-- romance movie rendering -->
+<div class="carousel">
+  <button id="romancePrevButton" class="carousel-button">‹</button>
+<div class="romance_movie_container" id="romanceMovieContainer">
+
+</div>
+<button id="romanceNextButton" class="carousel-button">›</button>
+  </div>
+  </body>
 </html>
