@@ -26,7 +26,7 @@ logoutButton.addEventListener("click", function() {
 });
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
-  import { getFirestore, doc, setDoc } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
+  import { getFirestore, doc, setDoc,collection } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
   
   // Firebase configuration
   
@@ -71,7 +71,6 @@ logoutButton.addEventListener("click", function() {
               thriller_movie_container.innerHTML += `
                   <div class="Thriller_Movie_Container">
                       <img src="${movie.image_url}" class="movie" alt="${movie.movie_name}">
-
                   </div>`;
           });
 
@@ -377,14 +376,60 @@ if (storedUsername) {
     usernameDisplay.textContent = "Welcome, Guest!"; // Default message
 }
 
-// const searchInput = document.getElementById("search");
-// const searchButton = document.getElementById("search-btn");
-// const resultsBox = document.getElementById("resultsBox");
-
-// const itmes = ["Vikram","Ratsasan","Kaithi","Aramm","Valimai","Soorarai Pottru","Psycho","Kolaigaran","Karnan","Vikram Vedha","Miruthan","Papanasam","Thadam","Black","Trip",
-//                "Demonte Colony 2","Airaa","Diary","Lift","Pisasu","Maya","Pizza III","U Turn","Nenjam Marappathillai","Sync","Asvins","Katteri","Bramayagam","Estate","Game Over",
-//                "Vada Chennai","Asuran","Sarpatta Parambarai","Thiunivu","Jailer","Vettaiyan","Leo","Jigarthanda Double X","Master","Beast","Captain Miller","Thani Oruvan","Mahaan","Maharaja","Raayan",
-//                "Kalakalappu 2","Mark Antony","Remo","Don","Doctor","Comali","Zombie","Gurkha","DD Returns","Maragadha Naanayam","Dhilluku Dhuddu","Naai Sekar Returns","Dikkiloona","Varalaru Mukkiyam",
-//                "Adiyae","Star","Thiruchitrambalam","Sita Ramam","Hey Sinamika","Love Today","Romeo","O Kadhai Kanmani","Sivakumarin Sabadham","Kannum kannum Kollaiyadithaal","Rasavathi","Saba Nayagan","Jeeva","Kaathuvaakula Rendu Kaadhal","Anegan"];
-
-
+// Sample movies data
+const movies = [
+    "Vikram","Ratsasan","Kaithi","Aramm","Valimai","Soorarai Pottru","Psycho","Kolaigaran","Karnan","Vikram Vedha","Miruthan","Papanasam","Thadam","Black","Trip",
+               "Demonte Colony 2","Airaa","Diary","Lift","Pisasu","Maya","Pizza III","U Turn","Nenjam Marappathillai","Sync","Asvins","Katteri","Bramayagam","Estate","Game Over",
+               "Vada Chennai","Asuran","Sarpatta Parambarai","Thiunivu","Jailer","Vettaiyan","Leo","Jigarthanda Double X","Master","Beast","Captain Miller","Thani Oruvan","Mahaan","Maharaja","Raayan",
+               "Kalakalappu 2","Mark Antony","Remo","Don","Doctor","Comali","Zombie","Gurkha","DD Returns","Maragadha Naanayam","Dhilluku Dhuddu","Naai Sekar Returns","Dikkiloona","Varalaru Mukkiyam",
+               "Adiyae","Star","Thiruchitrambalam","Sita Ramam","Hey Sinamika","Love Today","Romeo","O Kadhai Kanmani","Sivakumarin Sabadham","Kannum kannum Kollaiyadithaal","Rasavathi","Saba Nayagan","Jeeva","Kaathuvaakula Rendu Kaadhal","Anegan"
+  ];
+  
+  const searchBar = document.getElementById("searchBar");
+  const resultsContainer = document.getElementById("resultsContainer");
+  
+  // Function to render search results
+  function renderResults(filteredMovies) {
+    resultsContainer.innerHTML = ""; // Clear previous results
+  
+    if (filteredMovies.length > 0) {
+      filteredMovies.forEach(movie => {
+        const resultItem = document.createElement("div");
+        resultItem.textContent = movie;
+        resultItem.className = "result-item";
+        resultsContainer.appendChild(resultItem);
+  
+        // Optional: Add click functionality to result items
+        resultItem.addEventListener("click", () => {
+          searchBar.value = movie; // Fill the search bar with the selected movie
+          resultsContainer.style.display = "none"; // Hide results
+        });
+      });
+  
+      resultsContainer.style.display = "block"; // Show results
+    } else {
+      resultsContainer.style.display = "none"; // Hide if no results
+    }
+  }
+  
+  // Event listener for input
+  searchBar.addEventListener("input", () => {
+    const query = searchBar.value.trim().toLowerCase();
+  
+    if (query) {
+      const filteredMovies = movies.filter(movie =>
+        movie.toLowerCase().includes(query)
+      );
+      renderResults(filteredMovies);
+    } else {
+      resultsContainer.style.display = "none"; // Hide results if input is empty
+    }
+  });
+  
+  // Optional: Hide results when clicking outside the search bar
+  document.addEventListener("click", (event) => {
+    if (!event.target.closest(".search-container")) {
+      resultsContainer.style.display = "none";
+    }
+  });
+  

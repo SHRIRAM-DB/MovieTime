@@ -1,162 +1,175 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scrollbar-width:none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width:none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
-    background-color: black;
+  background-color: black;
 }
 .head{
-    position: fixed;
-    background-color: black;
-    width: 100%;
-    z-index: 20;
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  z-index: 20;
+  height: 100px;
 }
 
 /*navigation bar*/
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-    flex-wrap: wrap; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  flex-wrap: wrap; 
+  height: 100px;
 }
 
 .logo {
-    height: 80px;
-    width: auto;
-    cursor: pointer;
+  height: 80px;
+  width: auto;
+  cursor: pointer;
 }
 
 .ott-name {
-    color: white;
-    font-size: 25px;
-    margin-bottom: 2px;
-    flex: 1;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 2px;
+  flex: 1;
 }
 
-.search-container {
-    display: flex;
-    align-items: center;
-    background-color: white;
-    overflow: hidden;
-    border-radius: 50px;
-    padding: 2px;
-    width: 300px;
+
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
 }
 
-.search {
-    padding: 5px;
-    font-size: 16px;
-    border: none;
-    outline: none;
+.movie-card {
+  width: 150px;
+  text-align: center;
 }
 
-.search-btn {
-    background-color: black;
-    color: white;
-    border: none;
-    padding: 3px;
-    cursor: pointer;
-    margin-left: 55px;
-    margin-top: 0.5px;
-    border-radius: 100%;
-    padding: 10px;
+.movie-card p {
+  margin: 10px 0 0;
+  font-size: 14px;
 }
 
-.results-box {
-    margin-top: 10px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    width: 100%;
-    max-height: 300px;
-    overflow-y: auto;
-    background-color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    display: none; /* Initially hidden */
-  }
-  
-  .result-item {
-    padding: 10px;
-    border-bottom: 1px solid #eee;
-  }
-  
-  .result-item:last-child {
-    border-bottom: none;
-  }
-  
-  .result-item:hover {
-    background-color: #f0f0f0;
-    cursor: pointer;
-  }
-  
 
 .Profile {
-    height: 80px;
-    width: auto;
-    cursor: pointer;
+  height: 80px;
+  width: auto;
+  cursor: pointer;
 }
 
 .line {
-    border-top: 2px solid white;
-    width: 100%;
+  border-top: 2px solid white;
+  width: 100%;
 }
 
 @media screen and (max-width: 768px) {
-    .ott-name {
-        font-size: 20px;
-        margin: 10px; 
-    }
-    
-    .header {
-        flex-direction: column;
-        align-items: center;
-    }
+  .ott-name {
+      font-size: 20px;
+      margin: 10px; 
+  }
+  
+  .header {
+      flex-direction: column;
+      align-items: center;
+  }
 
-    .search {
-        font-size: 14px;
-        height: 30px;
-    }
+  .search {
+      font-size: 14px;
+      height: 30px;
+  }
 
-    .search-btn{
-        margin-top: 0.5px;
-        padding: 4px;
-        margin-right: 5px;
-    }
+  .search-btn{
+      margin-top: 0.5px;
+      padding: 4px;
+      margin-right: 5px;
+  }
+}
+
+/* Style for the search bar */
+.search-container {
+position: relative;
+z-index: 1000; /* Ensure it's above other content */
+}
+
+#searchBar {
+width: 400px;
+padding: 10px;
+font-size: 16px;
+border: 1px solid #ccc;
+border-radius: 4px;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.result-item {
+padding: 10px;
+cursor: pointer;
+border-bottom: 1px solid #eee;
+background-color: white;
+text-align: center;
+}
+
+.result-item:last-child {
+border-bottom: none;
+}
+
+/* Card container */
+.card {
+position: relative;
+width: 300px; /* Adjust the size as needed */
+height: 450px; /* Adjust the size as needed */
+overflow: hidden;
+border-radius: 10px; /* Optional rounded corners */
+}
+.results-container{
+min-height: 100px;
+overflow-y: scroll;
+width: 400px;
+height: 200px;
+position: absolute;
+right:90px;
+top:70px;
+z-index: 2000;
+position: fixed;
 }
 
 /* Dropdown menu */
 #profileDropdown {
-    display: none;
-    position: absolute;
-    right: 10px; 
-    top: 80px; 
-    background-color: #333;
-    color: white;
-    min-width: 150px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 12px 16px;
-    z-index: 1;
-    border-radius: 5px; 
+  display: none;
+  position: absolute;
+  right: 10px; 
+  top: 80px; 
+  background-color: #333;
+  color: white;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  border-radius: 5px; 
 }
 
 .dropdown-content p{
-    text-align: center;
-    margin-bottom: 10px;
+  text-align: center;
+  margin-bottom: 10px;
 }
 
-.dropdown-content button {
-    background: none;
-    color: white;
-    border: none;
-    padding: 8px;
-    text-align: center;
-    width: 100%;
-    cursor: pointer;
-    background-color: red;
+.dropdown-content #logoutButton {
+  background: none;
+  color: white;
+  border: none;
+  padding: 8px;
+  text-align: center;
+  width: 100%;
+  cursor: pointer;
+  background-color: red;
 }
 
 /* --------------------------------------------------------------------------------------------------------------------------------- */
@@ -164,287 +177,328 @@ body {
 /* lasest movie */
 
 .movie_slide{
- width: 1504px;
- height: 99%;
- border-radius: 10px;
+width: 1504px;
+height: 99%;
+border-radius: 10px;
 }
 
 .slider-container{
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .movie_slide_container{
-    display: flex;
-    background-color: black;
-    position: relative;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  background-color: black;
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .slide {
-    flex: 0 0 100%; /* Each slide takes 100% of the container width */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  flex: 0 0 100%; /* Each slide takes 100% of the container width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #prevButton,
 #nextButton {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    border-radius: 1000%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    z-index: 10;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 1000%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
 }
 
 #nextButton {
-    right: 20px;
+  right: 20px;
 }
 
 #prevButton{
-    left: 20px;
+  left: 20px;
 }
-  
+
 #prevButton:hover,
 #nextButton:hover {
-    background: white;
-    color: black;
+  background: white;
+  color: black;
 }
 
 
 /* common */
 .heading_and_icon {
-  display: flex;
-  background-color: black;
-  color: white;
-  align-items: center;
-  gap: 10px;
-  padding-left: 50px;
-  height: 100px;
-  font-family: Arial, Helvetica, sans-serif;
+display: flex;
+background-color: black;
+color: white;
+align-items: center;
+gap: 10px;
+padding-left: 50px;
+height: 100px;
 }
 
 
 .movie {
-    width: 250px;
-    margin-left: 10px;
-    border: 2px solid gray;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-    height: 340px;
-    margin-right: 15px;
-  }
+  width: 250px;
+  margin-left: 10px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  height: 340px;
+  margin-right: 15px;
+}
 
-  .movie:hover{
-    transform: scale(1.1);
-  }
+.movie:hover{
+  transform: scale(1.1);
+}
 
-  .carousel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
 }
 
 .carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    z-index: 10;
-    padding: 5px 10px;
-    border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10;
+  padding: 5px 10px;
+  border-radius: 50%;
 }
-  
+
 /* thriller */
 
 .thriller_movie_container
- {
-  display: flex;
-  background-color: black;
-  padding: 2%;
-  transition: transform 0.5s ease-in-out;
-  width: 100%;
+{
+display: flex;
+background-color: black;
+padding: 2%;
+transition: transform 0.5s ease-in-out;
+width: 100%;
 }
 
 .Thriller_Movie_Container{
-  border-radius: 10px;  
+border-radius: 10px;  
   margin-left: 10px;
-  flex: 0 0 auto;
   width: 250px; /* Width of each movie card */
   margin: 10px;
   text-align: center;
 }
 
 .Thriller_Movie_Container img {
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 
 #thrillerPrevButton {
-    left: 20px;
-    background-color: black;
-    border-radius: 10px;
+  left: 20px;
+  background-color: black;
+  border-radius: 10px;
 }
 
 #thrillerNextButton {
-    right: 20px;
-    background-color: black;
-    border-radius: 10px;
+  right: 20px;
+  background-color: black;
+  border-radius: 10px;
+}
+
+
+/* Overlay container for buttons */
+.overlay {
+  position: absolute;
+  bottom: -50px; /* Initially hidden */
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  padding: 20px ;
+  transition: bottom 0.3s ease-in-out;
+
+}
+
+
+/* Button styles */
+.watch-now .watch-later {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+  color: black;
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 1);
+  opacity: 1;
+  z-index: 3;
+}
+
+.Thriller_Movie_Container:hover .movie {
+  transform: scale(1.1); /* Slightly zoom in on hover */
+}
+
+.Thriller_Movie_Container:hover .overlay {
+  bottom: 0; /* Bring the buttons into view */
 }
 
 /* horror */
 
 .horror_movie_container {
-    display: flex;
-    align-items: center;
-    padding: 2%;
-  }
+  display: flex;
+  align-items: center;
+  padding: 2%;
+}
 
-  .Horror_Movie_Container{
-    border-radius: 10px;  
-    margin-left: 10px;
-    flex: 0 0 auto;
-    width: 250px; /* Width of each movie card */
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .Horror_Movie_Container img {
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  
-  #horrorPrevButton {
-      left: 20px;
-      background-color: black;
-      border-radius: 10px;
-  }
-  
-  #horrorNextButton {
-      right: 20px;
-      background-color: black;
-      border-radius: 10px;
-  }
-  
-  /* action */
+.Horror_Movie_Container{
+  border-radius: 10px;  
+  margin-left: 10px;
+  width: 250px; /* Width of each movie card */
+  margin: 10px;
+  text-align: center;
+}
 
-  .action_movie_container{
-    display: flex;
-    align-items: center;
-    padding: 2%;
-  }
+.Horror_Movie_Container img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
 
-  .Action_Movie_Container{
-    border-radius: 10px;  
-    margin-left: 10px;
-    flex: 0 0 auto;
-    width: 250px; /* Width of each movie card */
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .Action_Movie_Container img {
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  
-  #actionPrevButton {
-      left: 20px;
-      background-color: black;
-      border-radius: 10px;
-  }
-  
-  #actionNextButton {
-      right: 20px;
-      background-color: black;
-      border-radius: 10px;
-  }  
 
-  /* comedy */
+#horrorPrevButton {
+    left: 20px;
+    background-color: black;
+    border-radius: 10px;
+}
 
-   .comedy_movie_container{
-    display: flex;
-    align-items: center;
-    padding: 2%;
-  }
+#horrorNextButton {
+    right: 20px;
+    background-color: black;
+    border-radius: 10px;
+}
 
-  .Comedy_Movie_Container{
-    border-radius: 10px;  
-    margin-left: 10px;
-    flex: 0 0 auto;
-    width: 250px; /* Width of each movie card */
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .Comedy_Movie_Container img {
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  
-  #comedyPrevButton {
-      left: 20px;
-      background-color: black;
-      border-radius: 10px;
-  }
-  
-  #comedyNextButton {
-      right: 20px;
-      background-color: black;
-      border-radius: 10px;
-  }  
+/* action */
+
+.action_movie_container{
+  display: flex;
+  align-items: center;
+  padding: 2%;
+}
+
+.Action_Movie_Container{
+  border-radius: 10px;  
+  margin-left: 10px;
+  width: 250px; /* Width of each movie card */
+  margin: 10px;
+  text-align: center;
+}
+
+.Action_Movie_Container img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+#actionPrevButton {
+    left: 20px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+#actionNextButton {
+    right: 20px;
+    background-color: black;
+    border-radius: 10px;
+}  
+
+/* comedy */
+
+ .comedy_movie_container{
+  display: flex;
+  align-items: center;
+  padding: 2%;
+}
+
+.Comedy_Movie_Container{
+  border-radius: 10px;  
+  margin-left: 10px;
+  width: 250px; /* Width of each movie card */
+  margin: 10px;
+  text-align: center;
+}
+
+.Comedy_Movie_Container img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+#comedyPrevButton {
+    left: 20px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+#comedyNextButton {
+    right: 20px;
+    background-color: black;
+    border-radius: 10px;
+}  
 
 /* romancea */
 
-  .romance_movie_container{
-    display: flex;
-    align-items: center;
-    padding: 2%;
-  }
-  
-  .Romance_Movie_Container{
-    border-radius: 10px;  
-    margin-left: 10px;
-    flex: 0 0 auto;
-    width: 250px; /* Width of each movie card */
-    margin: 10px;
-    text-align: center;
-  }
-  
-  .Romance_Movie_Container img {
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  
-  #romancePrevButton {
-      left: 20px;
-      background-color: black;
-      border-radius: 10px;
-  }
-  
-  #romanceNextButton {
-      right: 20px;
-      background-color: black;
-      border-radius: 10px;
-  }  
+.romance_movie_container{
+  display: flex;
+  align-items: center;
+  padding: 2%;
+}
+
+.Romance_Movie_Container{
+  border-radius: 10px;  
+  margin-left: 10px;
+  width: 250px; /* Width of each movie card */
+  margin: 10px;
+  text-align: center;
+}
+
+.Romance_Movie_Container img {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+#romancePrevButton {
+    left: 20px;
+    background-color: black;
+    border-radius: 10px;
+}
+
+#romanceNextButton {
+    right: 20px;
+    background-color: black;
+    border-radius: 10px;
+}  
+
+
+
+
+
