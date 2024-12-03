@@ -34,9 +34,6 @@ body {
 }
 
 .ott-name {
-  color: white;
-  font-size: 25px;
-  margin-bottom: 2px;
   flex: 1;
 }
 
@@ -115,6 +112,7 @@ cursor: pointer;
 border-bottom: 1px solid #eee;
 background-color: white;
 text-align: center;
+scrollbar-width: auto;
 }
 
 .result-item:last-child {
@@ -139,6 +137,8 @@ right:90px;
 top:70px;
 z-index: 2000;
 position: fixed;
+border-bottom-left-radius: 10px;
+border-bottom-right-radius: 10px;
 }
 
 /* Dropdown menu */
@@ -199,6 +199,7 @@ border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 #prevButton,
@@ -233,8 +234,12 @@ border-radius: 10px;
   color: black;
 }
 
-
 /* common */
+.hidden-movie-name {
+display: none;
+}
+
+
 .heading_and_icon {
 display: flex;
 background-color: black;
@@ -497,8 +502,3 @@ button:hover {
     background-color: black;
     border-radius: 10px;
 }  
-
-
-
-
-

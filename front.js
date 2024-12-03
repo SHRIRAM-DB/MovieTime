@@ -24,6 +24,9 @@ logoutButton.addEventListener("click", function() {
     // Redirect to the index or login page
     window.location.href = "/index.html";
 });
+
+const movies = []; // Array to store movie names    
+
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
   import { getFirestore, doc, setDoc,collection } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
@@ -60,25 +63,91 @@ logoutButton.addEventListener("click", function() {
               await setDoc(docRef, { movies: categoryData });
               console.log(`Uploaded category: ${category}`);
           }
+          
+  
+  // Add movies to the slider
+  data.category.movie_slide.forEach(movie => {
+    movieSlideContainer.innerHTML += `
+        <div class="slide">
+         <a href="secondPage.html?id=${movie.id}" style="height: 100%;">
+            <img src="${movie.image_url}" class="movie_slide" alt="${movie.movie_name}">
+            
+        </div>`;
+});
+
+// Cloning slides for infinite effect
+const slides = document.querySelectorAll(".slide");
+slides.forEach(slide => {
+    const clone = slide.cloneNode(true);
+    movieSlideContainer.appendChild(clone);
+});
+
+let currentSlide = 0;
+
+function updateSlider() {
+    movieSlideContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+    movieSlideContainer.style.transition = "transform 0.5s ease-in-out";
+}
+
+// Next button
+nextButton.addEventListener("click", () => {
+    if (currentSlide >= slides.length) {
+        movieSlideContainer.style.transition = "none"; // Remove transition for seamless loop
+        currentSlide = 0; // Reset to start
+        movieSlideContainer.style.transform = `translateX(0)`;
+        setTimeout(() => {
+            movieSlideContainer.style.transition = "transform 0.5s ease-in-out"; // Reapply transition
+            currentSlide++;
+            updateSlider();
+        }, 0);
+    } else {
+        currentSlide++;
+        updateSlider();
+    }
+});
+
+// Previous button
+prevButton.addEventListener("click", () => {
+    if (currentSlide <= 0) {
+        movieSlideContainer.style.transition = "none";
+        currentSlide = slides.length; // Jump to the last slide
+        movieSlideContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
+        setTimeout(() => {
+            movieSlideContainer.style.transition = "transform 0.5s ease-in-out";
+            currentSlide--;
+            updateSlider();
+        }, 0);
+    } else {
+        currentSlide--;
+        updateSlider();
+    }
+});
+
 
           const thrillerMovieContainer = document.getElementById("thrillerMoviesContainer");
           const thrillerPrevButton = document.getElementById("thrillerPrevButton");
           const thrillerNextButton = document.getElementById("thrillerNextButton");
 
+
           // Render thriller movies
           const thriller_movie_container = document.getElementById("thrillerMoviesContainer");
           data.category.thriller.forEach(movie => {
+            movies.push(movie.movie_name);
               thriller_movie_container.innerHTML += `
+              <a href="secondPage.html?id=${movie.id}">
                   <div class="Thriller_Movie_Container">
                       <img src="${movie.image_url}" class="movie" alt="${movie.movie_name}">
-                  </div>`;
+                        <p class="hidden-movie-name">${movie.movie_name}</p>
+                  </div>
+                  </a>`; 
           });
-
+          
           let thrillerIndex = 0; // Tracks the current slide
-const thrillerMovies = document.querySelectorAll(".Thriller_Movie_Container");
-const thrillerTotalMovies = thrillerMovies.length;
-const thrillerMovieWidth = 188; // Width of each movie card + margin
-// Update the carousel view
+          const thrillerMovies = document.querySelectorAll(".Thriller_Movie_Container");
+          const thrillerTotalMovies = thrillerMovies.length;
+          const thrillerMovieWidth = 188; // Width of each movie card + margin
+
+          // Update the carousel view
 function updateThrillerCarousel() {
     thrillerMovieContainer.style.transform = `translateX(-${thrillerIndex * thrillerMovieWidth}px)`;
 }
@@ -106,10 +175,14 @@ const horrorNextButton = document.getElementById("horrorNextButton");
           //Render horror movies
           const horror_movie_container=document.getElementById("horrorMovieContainer")
           data.category.horror.forEach(movie => {
+            movies.push(movie.movie_name);
             horror_movie_container.innerHTML +=`
+              <a href="secondPage.html?id=${movie.id}">
                 <div class="Horror_Movie_Container" >
                 <img src="${movie.image_url}" class="movie" alt="${movie.movie_name}">
-                </div>`;
+                  <p class="hidden-movie-name">${movie.movie_name}</p>
+                </div>
+                </a>`;
           });
 
           let horrorIndex = 0; // Tracks the current slide
@@ -144,10 +217,14 @@ const actionNextButton = document.getElementById("actionNextButton");
 
           const action_movie_container=document.getElementById("actionMovieContainer")
           data.category.action.forEach(movie => {
+            movies.push(movie.movie_name);
             action_movie_container.innerHTML +=`
+              <a href="secondPage.html?id=${movie.id}">
                 <div class="Action_Movie_Container" >
                 <img src="${movie.image_url}" class="movie" alt="${movie.movie_name}">
-                </div>`;
+                  <p class="hidden-movie-name">${movie.movie_name}</p>
+                </div>
+                </a>`;
           });
 
           let actionIndex = 0; // Tracks the current slide
@@ -182,10 +259,14 @@ const actionNextButton = document.getElementById("actionNextButton");
         
         // Render comedy movies
         data.category.comedy.forEach(movie => {
+            movies.push(movie.movie_name);
            comedy_movie_container.innerHTML += `
+             <a href="secondPage.html?id=${movie.id}">
                 <div class="comedy_Movie_Container">
                     <img src="${movie.image_url}" class="movie" alt="${movie.movie_name}">
-                </div>`;
+                    <p class="hidden-movie-name">${movie.movie_name}</p>
+                </div>
+                </a>`;
         });
         
         // Variables for carousel functionality
@@ -222,11 +303,14 @@ const actionNextButton = document.getElementById("actionNextButton");
         const romanceMovieContainer = document.getElementById("romanceMovieContainer");
           const romance_movie_container=document.getElementById("romanceMovieContainer")
           data.category.romance.forEach(movie => {
+            movies.push(movie.movie_name);
             romance_movie_container.innerHTML +=`
+              <a href="secondPage.html?id=${movie.id}">
                 <div class="romance_Movie_Container" >
                 <img src="${movie.image_url}" class="movie" alt="${movie.movie_name}">
-
-                </div>`;
+                  <p class="hidden-movie-name">${movie.movie_name}"</p>
+                </div>
+                </a>`;
           });
 
  // Carousel variables
@@ -279,88 +363,6 @@ romancePrevButton.addEventListener("click", () => {
   const prevButton = document.getElementById("prevButton");
   const nextButton = document.getElementById("nextButton");
   
-  const data = {
-      category: {
-          movie_slide: [
-              {
-                  movie_name: "Vettaiyan",
-                  image_url: "https://assets-in.bmscdn.com/discovery-catalog/events/et00379391-uwerqpdxtl-landscape.jpg"
-              },
-              {
-                  movie_name: "Black",
-                  image_url: "https://assets-in.bmscdn.com/discovery-catalog/events/et00414825-zvyzztfquu-landscape.jpg"
-              },
-              {
-                  movie_name: "Jailer",
-                  image_url: "https://m.media-amazon.com/images/M/MV5BZjJhZTk1MGUtNzk4MC00NjgxLTllM2EtMTVjNGMwZWM3MzAzXkEyXkFqcGc@._V1_.jpg"
-              },
-              {
-                  movie_name: "Bramayagam",
-                  image_url: "https://assets-in.bmscdn.com/discovery-catalog/events/et00367666-dcdttzmgfe-landscape.jpg"
-              },
-              {
-                  movie_name: "Demonte Colony 2",
-                  image_url: "https://akamaividz2.zee5.com/image/upload/w_1170,h_658,c_scale/resources/0-0-1z5625693/list/ImageTitle8efab77c2e1a40699e2e6d44ccf157a7.jpg"
-              }
-          ] 
-      }
-  };
-  
-  // Add movies to the slider
-  data.category.movie_slide.forEach(movie => {
-      movieSlideContainer.innerHTML += `
-          <div class="slide">
-              <img src="${movie.image_url}" class="movie_slide" alt="${movie.movie_name}">
-          </div>`;
-  });
-  
-  // Cloning slides for infinite effect
-  const slides = document.querySelectorAll(".slide");
-  slides.forEach(slide => {
-      const clone = slide.cloneNode(true);
-      movieSlideContainer.appendChild(clone);
-  });
-  
-  let currentSlide = 0;
-  
-  function updateSlider() {
-      movieSlideContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
-      movieSlideContainer.style.transition = "transform 0.5s ease-in-out";
-  }
-  
-  // Next button
-  nextButton.addEventListener("click", () => {
-      if (currentSlide >= slides.length) {
-          movieSlideContainer.style.transition = "none"; // Remove transition for seamless loop
-          currentSlide = 0; // Reset to start
-          movieSlideContainer.style.transform = `translateX(0)`;
-          setTimeout(() => {
-              movieSlideContainer.style.transition = "transform 0.5s ease-in-out"; // Reapply transition
-              currentSlide++;
-              updateSlider();
-          }, 0);
-      } else {
-          currentSlide++;
-          updateSlider();
-      }
-  });
-  
-  // Previous button
-  prevButton.addEventListener("click", () => {
-      if (currentSlide <= 0) {
-          movieSlideContainer.style.transition = "none";
-          currentSlide = slides.length; // Jump to the last slide
-          movieSlideContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
-          setTimeout(() => {
-              movieSlideContainer.style.transition = "transform 0.5s ease-in-out";
-              currentSlide--;
-              updateSlider();
-          }, 0);
-      } else {
-          currentSlide--;
-          updateSlider();
-      }
-  });
 
   
   // Select the element where the username will be displayed
@@ -376,15 +378,7 @@ if (storedUsername) {
     usernameDisplay.textContent = "Welcome, Guest!"; // Default message
 }
 
-// Sample movies data
-const movies = [
-    "Vikram","Ratsasan","Kaithi","Aramm","Valimai","Soorarai Pottru","Psycho","Kolaigaran","Karnan","Vikram Vedha","Miruthan","Papanasam","Thadam","Black","Trip",
-               "Demonte Colony 2","Airaa","Diary","Lift","Pisasu","Maya","Pizza III","U Turn","Nenjam Marappathillai","Sync","Asvins","Katteri","Bramayagam","Estate","Game Over",
-               "Vada Chennai","Asuran","Sarpatta Parambarai","Thiunivu","Jailer","Vettaiyan","Leo","Jigarthanda Double X","Master","Beast","Captain Miller","Thani Oruvan","Mahaan","Maharaja","Raayan",
-               "Kalakalappu 2","Mark Antony","Remo","Don","Doctor","Comali","Zombie","Gurkha","DD Returns","Maragadha Naanayam","Dhilluku Dhuddu","Naai Sekar Returns","Dikkiloona","Varalaru Mukkiyam",
-               "Adiyae","Star","Thiruchitrambalam","Sita Ramam","Hey Sinamika","Love Today","Romeo","O Kadhai Kanmani","Sivakumarin Sabadham","Kannum kannum Kollaiyadithaal","Rasavathi","Saba Nayagan","Jeeva","Kaathuvaakula Rendu Kaadhal","Anegan"
-  ];
-  
+// search bar functionality
   const searchBar = document.getElementById("searchBar");
   const resultsContainer = document.getElementById("resultsContainer");
   
@@ -397,6 +391,11 @@ const movies = [
         const resultItem = document.createElement("div");
         resultItem.textContent = movie;
         resultItem.className = "result-item";
+
+        resultItem.addEventListener("click", () => {
+            window.location.href = `secondPage.html?id=${movie.id}`; // Navigate to second page with movie ID
+          });
+
         resultsContainer.appendChild(resultItem);
   
         // Optional: Add click functionality to result items
@@ -411,6 +410,7 @@ const movies = [
       resultsContainer.style.display = "none"; // Hide if no results
     }
   }
+
   
   // Event listener for input
   searchBar.addEventListener("input", () => {
@@ -433,3 +433,4 @@ const movies = [
     }
   });
   
+  console.log("Movie Names Array:", movies);
