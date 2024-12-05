@@ -3,6 +3,7 @@ import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebas
 import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
 
+
 // Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyDzQ4VrfxpuRao5WpeBHnl8TStgz8q3KOw",
@@ -37,6 +38,8 @@ showPasswordToggle.addEventListener("click", () => {
   showPasswordToggle.textContent = isPasswordVisible ? "Hide" : "Show";
 });
 
+let isValid=false;
+
 form.addEventListener("submit", (event) => {
   event.preventDefault();  // Prevent default form submission
 
@@ -47,10 +50,8 @@ form.addEventListener("submit", (event) => {
   // Validate email
   if (!email.value) {
     emailError.textContent = "Email is required!";
-    return;
   } else if (!email.value.endsWith("@gmail.com")) {
     emailError.textContent = "Only @gmail.com email addresses are allowed!";
-    return;
   }
 
   // Validate password
@@ -62,6 +63,7 @@ form.addEventListener("submit", (event) => {
     return;
   }
 
+
   // Firebase Authentication: Sign in with email and password
   signInWithEmailAndPassword(auth, email.value, password.value)
     .then((userCredential) => {
@@ -69,8 +71,10 @@ form.addEventListener("submit", (event) => {
       const user = userCredential.user;
       alert("Login successful!");
       // Redirect to another page if needed
-      window.location.href = "/front.html";  // Update to your desired page
-    })
+      window.location.replace( "front.html");  // Update to your desired page  
+      isValid=true    
+    })  
+
     .catch((error) => {
       const errorCode = error.code;
 
@@ -83,6 +87,10 @@ form.addEventListener("submit", (event) => {
       }
     });
 });
+
+if(isValid){
+  window.location.replace="front.html"
+}
 
 email.addEventListener("input", function() {
   emailError.textContent = "";
@@ -109,3 +117,10 @@ password.addEventListener("input", function() {
     passwordError.textContent = ""; // Clear the error if passwords match
   }
 });
+
+const signUpLink = document.getElementById("sign-up");
+signUpLink.addEventListener("click", (event) => {
+  event.preventDefault(); // Prevent the default link navigation
+  window.location.replace("Sign-up.html"); // Navigate without adding to history
+});
+

@@ -51,6 +51,24 @@ showConformPasswordToggle.addEventListener("click", () => {
   showConformPasswordToggle.textContent = isConformPasswordVisible ? "Hide" : "Show";
 });
 
+// Get references to input field and button
+const usernameInput = document.getElementById("name");
+const saveButton = document.getElementById("savebutton");
+
+//Save username to localStorage when the button is clicked
+saveButton.addEventListener("click", () => {
+  const username = usernameInput.value.trim(); 
+  // Get the input value
+  if (username) {
+    localStorage.setItem("username", username); 
+    // Save to localStorage
+    alert("Username saved successfully!");
+  } else {
+    alert("Please enter a username.");
+  }
+});
+
+
 form.addEventListener("submit", function(event) {
   event.preventDefault(); 
 
@@ -104,6 +122,9 @@ form.addEventListener("submit", function(event) {
     isValid = false;
   }
 
+  if(isValid){
+    window.location.replace("front.html");  
+  }
   
   if (isValid) {
     const emailValue = email.value;
@@ -194,20 +215,12 @@ conformPassword.addEventListener("input", function() {
   }
 });
 
-// Get references to input field and button
-const usernameInput = document.getElementById("name");
-const saveButton = document.getElementById("savebutton");
-
-// Save username to localStorage when the button is clicked
-saveButton.addEventListener("click", () => {
-  const username = usernameInput.value.trim(); // Get the input value
-  if (username) {
-    localStorage.setItem("username", username); // Save to localStorage
-    alert("Username saved successfully!");
-  } else {
-    alert("Please enter a username.");
-  }
+const loginLink = document.getElementById("login");
+loginLink.addEventListener("click", (event) => {
+  event.preventDefault(); // Prevent the default link navigation
+  window.location.replace("index.html"); // Navigate without adding to history
 });
+
 
 window.addEventListener("load", () => {
   const isLoggedIn = localStorage.getItem("isLoggedIn");

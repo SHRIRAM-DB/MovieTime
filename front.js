@@ -13,17 +13,29 @@ window.addEventListener("click", function(event) {
         dropdown.style.display = 'none';
     }
 });
-    
+
+let logout = false;
+
 // Logout functionality
 const logoutButton = document.getElementById("logoutButton");
 logoutButton.addEventListener("click", function() {
     sessionStorage.clear();
-
     alert("Logged out successfully!");
 
+    // Set logout to true
+    logout = true;
+
     // Redirect to the index or login page
-    window.location.href = "/index.html";
+    window.location.replace("index.html");
 });
+
+// This part may not be necessary because the redirect is handled directly above.
+// You can remove this condition or adjust it if needed.
+if (logout) {
+    window.location.replace("index.html");
+}
+
+
 
 const movies = []; // Array to store movie names    
 
@@ -356,7 +368,6 @@ romancePrevButton.addEventListener("click", () => {
   
   // Upload data on page load
   window.addEventListener("load", uploadJSONToFirebase);
-
 
 
   const movieSlideContainer = document.getElementById("movieSlideContainer");
