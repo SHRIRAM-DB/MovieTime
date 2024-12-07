@@ -115,8 +115,13 @@ text-align: center;
 scrollbar-width: auto;
 }
 
+.result-item:hover{
+   background-color: black;
+   color: white;
+}
+
 .result-item:last-child {
-border-bottom: none;
+border-bottom: 1px solid black;
 }
 
 /* Card container */
@@ -180,6 +185,7 @@ border-bottom-right-radius: 10px;
 width: 1504px;
 height: 99%;
 border-radius: 10px;
+background: linear-gradient(155deg, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 31%, rgba(0,0,0,0.10145308123249297) 100%);
 }
 
 .slider-container{
@@ -288,6 +294,8 @@ height: 100px;
   border-radius: 50%;
 }
 
+
+
 /* thriller */
 
 .thriller_movie_container
@@ -315,9 +323,10 @@ border-radius: 10px;
 
 #thrillerPrevButton {
   left: 20px;
-  background-color: black;
   border-radius: 10px;
-}
+  background-color:black;
+  
+} 
 
 #thrillerNextButton {
   right: 20px;
@@ -502,3 +511,59 @@ button:hover {
     background-color: black;
     border-radius: 10px;
 }  
+
+/* Full-page black background during loading */
+.loading-container {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: black; /* Full black background */
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1000;
+}
+
+/* Dots loader styles */
+.dots-loader {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 10px;
+position: relative;
+}
+
+.dot {
+width: 15px;
+height: 15px;
+border-radius: 50%;
+background-color: #3498db; /* Blue color */
+opacity: 0;
+animation: dot-blink 1.5s infinite;
+}
+
+.dot:nth-child(1) {
+animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+animation-delay: 0.5s;
+}
+
+.dot:nth-child(3) {
+animation-delay: 1s;
+}
+
+@keyframes dot-blink {
+0% {
+  opacity: 0;
+}
+50% {
+  opacity: 1;
+}
+100% {
+  opacity: 0;
+}
+}

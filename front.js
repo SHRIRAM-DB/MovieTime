@@ -33,6 +33,7 @@ logoutButton.addEventListener("click", function() {
 // You can remove this condition or adjust it if needed.
 if (logout) {
     window.location.replace("index.html");
+    isLoggedIn=false;
 }
 
 
@@ -83,7 +84,6 @@ const movies = []; // Array to store movie names
         <div class="slide">
          <a href="secondPage.html?id=${movie.id}" style="height: 100%;">
             <img src="${movie.image_url}" class="movie_slide" alt="${movie.movie_name}">
-            
         </div>`;
 });
 
@@ -148,9 +148,10 @@ prevButton.addEventListener("click", () => {
               thriller_movie_container.innerHTML += `
               <a href="secondPage.html?id=${movie.id}">
                   <div class="Thriller_Movie_Container">
-                      <img src="${movie.image_url}" class="movie" alt="${movie.movie_name}">
-                        <p class="hidden-movie-name">${movie.movie_name}</p>
+                    <img src="${movie.image_url}" class="movie" alt="${movie.movie_name}">
+                    <p class="hidden-movie-name">${movie.movie_name}</p> 
                   </div>
+                      
                   </a>`; 
           });
           
@@ -354,6 +355,8 @@ romancePrevButton.addEventListener("click", () => {
         updateRomanceCarousel();
     }
 });
+
+document.getElementById("loading-container").style.display = 'none';
 
 
       } catch (error) {
