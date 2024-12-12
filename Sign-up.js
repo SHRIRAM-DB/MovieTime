@@ -63,8 +63,6 @@ saveButton.addEventListener("click", () => {
     localStorage.setItem("username", username); 
     // Save to localStorage
     alert("Username saved successfully!");
-  } else {
-    alert("Please enter a username.");
   }
 });
 
