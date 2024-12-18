@@ -71,7 +71,7 @@ form.addEventListener("submit", (event) => {
       const user = userCredential.user;
       alert("Login successful!");
       // Redirect to another page if needed
-      window.location.replace( "front.html");  // Update to your desired page  
+      window.location.replace("/assets/pages/html/front.html");  // Update to your desired page  
       isValid=true    
     })  
 
