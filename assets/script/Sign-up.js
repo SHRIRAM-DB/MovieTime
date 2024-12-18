@@ -119,14 +119,11 @@ form.addEventListener("submit", function(event) {
     conformPasswordError.textContent = "Passwords do not match!";
     isValid = false;
   }
-
-  if(isValid){
-    window.location.replace("front.html");  
-  }
   
   if (isValid) {
     const emailValue = email.value;
     const passwordValue = password.value;
+    const nameValue=name.value;
 
     // Disable button to prevent multiple submissions
     btn.disabled = true;
@@ -134,7 +131,7 @@ form.addEventListener("submit", function(event) {
 
     
     // Firebase Authentication sign-up
-    createUserWithEmailAndPassword(auth, emailValue, passwordValue)
+    createUserWithEmailAndPassword(auth, emailValue, passwordValue, nameValue)
       .then((userCredential) => {
         // Successfully signed up
         const user = userCredential.user;
@@ -145,10 +142,9 @@ form.addEventListener("submit", function(event) {
         btn.disabled = false;
         btn.innerText = 'Create an account';
 
-        // Set sign-up completion flag and redirect
-        localStorage.setItem("isSignedUp", "true");
-        window.location.href = "/front.html"; // Redirect after successful sign-up
+        window.location.replace("front.html"); 
       })
+
       .catch((error) => {
         const errorMessage = error.message;
 
@@ -165,6 +161,7 @@ form.addEventListener("submit", function(event) {
       });
   }
 });
+
 
 name.addEventListener("input", function() {
   nameError.textContent = ""; // Clear the error message initially
@@ -220,11 +217,4 @@ loginLink.addEventListener("click", (event) => {
 });
 
 
-window.addEventListener("load", () => {
-  const isLoggedIn = localStorage.getItem("isLoggedIn");
 
-  // Redirect if logged in
-  if (isLoggedIn === "true") {
-    window.location.href = "front.html";
-  }
-});

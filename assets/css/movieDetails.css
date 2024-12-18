@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#movieDetailContainer {
+    height: 100%;
+    color: white;
+ }
+
+.movie_description{
+ text-align: center;
+ padding-top: 630px;
+ margin: 0;
+ padding-left: 40px;
+ padding-right: 40px;
+ padding-bottom: 0;
+ font-family: sans-serif;
+}
+
+.movie_name{
+    margin: 0;
+    position: relative;
+    top: 600px;
+    left: 60px;
+}
+
+.watch_now{
+    padding: 15px;
+    margin: 30px;
+    overflow: hidden;
+    background-color: whitesmoke;
+    color: black;
+    font-weight: bolder;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.watch_now:hover{
+    background-color: #808080;
+    color: white;
+    scrollbar-width:inherit;
+}
+
+.loading-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dots-loader {  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    height: 50%;
+  }
+  
+  .dot {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #3498db; /* Blue color */
+    opacity: 0;
+    animation: dot-blink 1.5s infinite;
+  }
+  
+  .dot:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .dot:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  
+  .dot:nth-child(3) {
+    animation-delay: 1s;
+  }
+  
+  
+  @keyframes dot-blink {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }

@@ -1,0 +1,732 @@
+{
+  "category": {
+    "movie_slide": [
+      {
+          "id": "action_movie_6",
+          "movie_name": "Vettaiyan",
+          "image_url": "https://assets-in.bmscdn.com/discovery-catalog/events/et00379391-uwerqpdxtl-landscape.jpg",
+          "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00379391-uwerqpdxtl-landscape.jpg",
+          "description":"A sought-after supercop gets caught in a series of unexpected events when he guns down a criminal in a murder case. Amidst his struggle to justify the act, he must confront his moral compass while fighting corrupt, larger-than-life forces. Vettaiyan explores the underbelly of crime investigations with one man's fight against a world, where justice is a rare commodity.",
+          "time-duration": "2h 43m",
+          "cast": ["Vikram", "Nayanthara", "Prakash Raj", "Bobby Simha"]
+      },
+      {
+        "id":"thriller_movie_14",
+          "movie_name": "Black",
+          "image_url": "https://assets-in.bmscdn.com/discovery-catalog/events/et00414825-zvyzztfquu-landscape.jpg",
+          "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00414825-zvyzztfquu-landscape.jpg",
+          "description":"A young couple move into a serene row house, eager for peace and privacy. A violent storm and unsettling forces unravel their marriage. Vasanth must uncover the truth behind these supernatural occurrences before everything falls apart.",
+          "time-duration": "1h 58m"
+      },
+      {
+        "id":"action_movie_5",
+          "movie_name": "Jailer",
+          "image_url": "https://www.koimoi.com/wp-content/new-galleries/2023/08/excitement-over-rajinikanths-entry-scene-in-jailer-causes-mumbai-theatre-to-pause-the-film.jpg",
+          "poster": "https://m.media-amazon.com/images/M/MV5BZjJhZTk1MGUtNzk4MC00NjgxLTllM2EtMTVjNGMwZWM3MzAzXkEyXkFqcGc@._V1_.jpg",
+          "description":"Tiger Muthuvel Pandian, a retired jailer, is now a family man who leads an ordinary life. Trouble knocks on his door when his son, a diligent cop, investigates an idol smuggling mafia. And forces Muthuvel Pandian to step back into the dark world of his past.",
+          "time-duration": "2h 49m"
+      },
+      {
+        "id":"horror_movie_13",
+          "movie_name": "Bramayagam",
+          "image_url": "https://assets-in.bmscdn.com/discovery-catalog/events/et00367666-dcdttzmgfe-landscape.jpg",
+          "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00367666-dcdttzmgfe-landscape.jpg",
+          "description": "With a compelling narrative and stunning visuals, ‘Bramayugam’ is hailed by critics as a ‘black and white masterpiece’ and ‘cinematic revelation’. After narrowly escaping slavery, a folk singer in 17th century Kerala stumbles upon a mysterious mansion inhabited by a cook and his formidable master, forever altering his destiny. Rahul Sadasivan's horror mystery ‘Bramayugam’ stars Mammootty, Arjun Ashokan and Sidharth Bharathan.",
+          "time-duration": "2h 20m"
+      },
+      {
+        "id": "horror_movie_1",
+          "movie_name": "Demonte Colony 2",
+          "image_url": "https://akamaividz2.zee5.com/image/upload/w_1170,h_658,c_scale/resources/0-0-1z5625693/list/ImageTitle8efab77c2e1a40699e2e6d44ccf157a7.jpg",
+          "poster": "https://akamaividz2.zee5.com/image/upload/w_1170,h_658,c_scale/resources/0-0-1z5625693/list/ImageTitle8efab77c2e1a40699e2e6d44ccf157a7.jpg",
+          "description":"Years after Sam's death, his wife Debbie feels a connection between his spirit and estranged twins, Srini and Raghu. Soon, the three come across a sinister spirit out to kill them. Will they survive?",
+          "time-duration": "2h 26m"
+        }
+  ],
+      "thriller":[
+  {
+    "id":"thriller_movie_1",
+    "movie_name": "Vikram",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNt53KSYiZCc4y5pgwTgAauk4smVgi42I9qLiTuXAWhxLxSycB1na6u7cF3OUUYpQMQlw&usqp=CAU",
+    "poster": "https://images.tv9telugu.com/wp-content/uploads/2022/06/vikram-3.jpg",
+    "description": "A covert investigation changes its course when special officer Amar enconunters an unrelenting Vikram and his pursuit to take down a notorious drug cartel.",
+    "time-duration": "2h 54m",
+    "cast": ["Kamal Haasan", "Fahadh Faasil", "Vijay Sethupathi", "Narain", "Chemban Vinod"]
+  },
+  {
+    "id":"thriller_movie_2",
+    "movie_name": "Ratsasan",
+    "image_url": "https://m.media-amazon.com/images/M/MV5BMTlmNjA3OWYtYjUyYy00MzM0LWI0MTktOTgxYmFlZmY1NmRmXkEyXkFqcGc@._V1_QL75_UX1230_.jpg",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00058667-jzwxrdvhgz-landscape.jpg",
+    "description": "An aspiring film director becomes a cop after his father's death. Now he has to catch a psychopath who is killing school girls before his niece is endangered.",
+    "time-duration": "2h 50m",
+    "cast": ["Vishnu Vishal", "Amala Paul", "Saravanan", "Kaali Venkat", "Radha Ravi"]
+  },
+  {
+    "id":"thriller_movie_3",
+    "movie_name": "Kaithi",
+    "image_url": "https://wallpapercave.com/wp/wp4871559.jpg",
+    "poster": "https://pbs.twimg.com/media/EHeE6DjUEAA9Moh?format=jpg&name=4096x4096",
+    "description": "Dilli, a convicted criminal, is out on parole to meet his daughter. However, a drug bust sets him off on a mission to save the life of police officers.",
+    "time-duration": "2h 26m",
+    "cast": ["Karthi", "Narain", "Arjun Das", "George Maryan", "Dheena"]
+  },
+  {
+    "id":"thriller_movie_4",
+    "movie_name": "Aramm",
+    "image_url": "https://m.media-amazon.com/images/M/MV5BMWY2NmI2NzMtNzZkYy00OGY3LWE1ZmYtMmU0N2VlYjg2MTAyXkEyXkFqcGc@._V1_QL75_UX1230_.jpg",
+    "poster": "https://sund-images.sunnxt.com/80518/1920x1080_Aramm_80518_177addad-83cb-41f1-a7ff-827038ab38d6.jpg",
+    "description": "Madhivadhani (Nayantara), a district collector, is confronted with an intense professional challenge when she must find a way to rescue Dhanshika, a young village girl trapped in a deep well, amid a ruthless media frenzy.",
+    "time-duration": "1h 59m",
+    "cast": ["Nayanthara", "Kitty", "Ramachandran Durairaj", "Vinodhini Vaidyanathan", "Ramesh"]
+  },
+  { 
+    "id":"thriller_movie_5",
+    "movie_name": "Valimai",
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRvfjBuj7wpagK97_IBDU2n0xxEdvFFsQp_VqeSwmbr0JvriaADF69QYswDyBoqNWERxAmnKw",
+    "poster": "https://igimage.indiaglitz.com/tamil/gallery/movies/thala60/main.jpg",
+    "description": "ACP Arjun is on a mission to capture a gang of criminals. But things take a complex turn when his mission conflicts with his family's safety.",
+    "time-duration": "2h 47m",
+    "cast": ["Ajith Kumar", "Huma Qureshi", "Kartikeya Gummakonda", "Raj Ayyappa", "Sumithra"]
+  },
+  {
+    "id":"thriller_movie_6",
+    "movie_name": "Soorarai Pottru",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo4iIf2Aq7anWNhHHSddCq3Yapg_OxZKgsyGLM7KIlycDpYaoWHJR7oXauyHUYz6dTff0&usqp=CAU",
+    "poster": "https://images.thequint.com/thequint%2F2021-08%2Fa87335b9-0746-45f7-87ec-cbd685eb5791%2FMV5BYWRjNGZkZmYtZTQ1Zi00ZjdmLWFkZmYtODJhMTI0OWUzMTc4XkEyXkFqcGdeQXVyODA4NTI4NzA___V1_.jpg?rect=0%2C0%2C1400%2C735",
+    "description": "Inspired by the book ‘Simply Fly’, the film tells the story of Nedumaaran Rajangam known to friends as Maara, the son of a teacher, who sets out to make the common man fly and takes on the most capital intensive industry in the world with the help of his friends, family and sheer will power.",
+    "time-duration": "2h 33m",
+    "cast": ["Suriya", "Aparna Balamurali", "Paresh Rawal", "Urvashi", "Karunas"]
+  },
+  {
+    "id":"thriller_movie_7",
+    "movie_name": "Psycho",
+    "image_url": "https://m.media-amazon.com/images/M/MV5BNjYxZjMyMGMtZjQ4Yi00NzJjLWE4M2EtYmVjNzFhOGI0MmQyXkEyXkFqcGc@._V1_QL75_UX1230_.jpg",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00116329-fwkntksczf-landscape.jpg",
+    "description": "As a visually impaired man attempts to rescue his love interest from a serial killer, the dark story behind the murderer’s disturbing psyche emerges.",
+    "time-duration": "2h 26m",
+    "cast": ["Udhayanidhi Stalin", "Aditi Rao Hydari", "Nithya Menen", "Ram", "Shaji Chen"]
+  },
+  {
+    "id":"thriller_movie_8",
+    "movie_name": "Kolaigaran",
+    "image_url": "https://c.saavncdn.com/232/Kolaigaran-Tamil-2019-20190311171955-500x500.jpg",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00077113-jvqhhkxlpm-landscape.jpg",
+    "description": "A crime branch cop is assigned to a gruesome murder case what follows next is a series of tangled mind games with horrifying twists.",
+    "time-duration": "2h 2m",
+    "cast": ["Vijay Antony", "Arjun Sarja", "Ashima Narwal", "Nassar", "Seetha"]
+  },
+  {
+    "id":"thriller_movie_9",
+    "movie_name": "Karnan",
+    "image_url": "https://m.media-amazon.com/images/M/MV5BYmVmNGQ0ZDEtMGVlYS00NGY4LWEzYTMtMmNmNjQ5NWIwMTgxXkEyXkFqcGc@._V1_QL75_UX1230_.jpg",
+    "poster": "https://armchairjournal.com/wp-content/uploads/2021/07/Karnan_Poster_9042021_1200-1.jpeg",
+    "description": "Karnan, a fearless village youth, must fight for the rights of the conservative people of his village, due to the torture given by a police officer.",
+    "time-duration": "2h 39m",
+    "cast": ["Dhanush", "Lal", "Rajisha Vijayan", "Natarajan Subramaniam", "Gouri G. Kishan"]
+  },
+  {
+    "id":"thriller_movie_10",
+    "movie_name": "Vikram Vedha",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgSyw7jYoAYPowm2uTSvjFKsUYnFuQR9mb-asueGIjaPtFLMAJz6blJsVjedcPD4DWywfu&s",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00053838-pxzqblapdk-landscape.jpg",
+    "description": "Vikram, an encounter specialist, goes on the lookout for Vedha, a ruthless gangster. However, uncertainty ensues when the latter inadvertently surrenders and gets bailed by Vikram's advocate wife.",
+    "time-duration": "2h 27m",
+    "cast": ["Madhavan", "Vijay Sethupathi", "Shraddha Srinath", "Varalaxmi Sarathkumar", "Kathir"]
+  },
+  {
+    "id":"thriller_movie_11",
+    "movie_name": "Miruthan",
+    "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSlabVX-eh49HeGPBjSZXXBHXALoPAiCcY3cBYIk1SfQFNaJ7SVPpWbnPxJwhFSGR60GrzEoQ",
+    "poster": "https://sund-images.sunnxt.com/7257/1920x1080_Miruthan_7257_1a2d62b3-740e-4142-8861-d7c8a3a84a2d.jpg",
+    "description": "A chemical liquid and a dog bite cause a zombie outbreak in Ooty. Karthik helps Dr Renu as she creates an antidote to control the situation.",
+    "time-duration": "1h 25m",
+    "cast": ["Jayam Ravi", "Lakshmi Menon", "Kaali Venkat", "R. N. R. Manohar", "Anikha Surendran"]
+  },
+  {
+    "id":"thriller_movie_12",
+    "movie_name": "Papanasam",
+    "image_url": "https://www.tallengestore.com/cdn/shop/files/Papanasam-KamalHaasan-TamilMoviePoster_09a6e9d3-412b-4ac3-8f54-b6efe0b1f900.jpg?v=1714521513",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00029037-zvlfjlupxj-landscape.jpg",
+    "description": "The story revolves around Suyambu (Kamal Haasan), a middle-class cable TV operator, and his family. They come under suspicion when Varun, the son of the Inspector-general of police (IG), goes missing soon after sexually harassing Suyambu's older daughter.",
+    "time-duration": "Papanasam",
+    "cast": ["Kamal Haasan", "Gautami", "Niveda Thomas", "Esther Anil", "Asha Sharath"]
+  },
+  {
+    "id":"thriller_movie_13",
+    "movie_name": "Thadam",
+    "image_url": "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/thadam-et00082524-27-08-2018-04-17-45.jpg",
+    "poster": "https://sund-images.sunnxt.com/78918/1920x1080_Thadam_78918_a9ce95eb-0ee1-48f5-a9e6-0b23b0061cbe.jpg",
+    "description": "The murder of a youngster creates confusion among cops when they discover the suspect has a lookalike.",
+    "time-duration": "2h 20m",
+    "cast": ["Arun Vijay", "Tanya Hope", "Smruthi Venkat", "Vidya Pradeep", "Sonia Aggarwal"]
+  },
+  {
+    "id":"thriller_movie_14",
+    "movie_name": "Black",
+    "image_url": "https://static.moviecrow.com/movies/0-black/233597-233594-Black-px214.jpg",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00414825-zvyzztfquu-landscape.jpg",
+    "description": "A young couple move into a serene row house, eager for peace and privacy. A violent storm and unsettling forces unravel their marriage. Vasanth must uncover the truth behind these supernatural occurrences before everything falls apart.",
+    "time-duration": "1h 58m",
+    "cast": ["Arun Vijay", "Aishwarya Rajesh", "Prasanna", "Kishore", "Radha Ravi"]
+  },
+  {
+    "id":"thriller_movie_15",
+    "movie_name": "Trip",
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjqjzaK8yEuzYZCwqf_1UfEOYON5mlYzNXRpOCssot7vE9Z3Ww0hSIQSpiUe3okMtVwO8XLQ",
+    "poster": "https://sund-images.sunnxt.com/113649/1920x1080_Trip_113649_d772780b-3451-4dbe-97d0-07eaa53c189d.jpg",
+    "description": "A group of friends traveling in a dense forest accidentally meet two strangers, who they think are the killers. Things get complicated when they get caught by real killers.",
+    "time-duration": "2h 1m",
+    "cast": ["Yogi Babu", "Sunainaa", "Karunakaran", "Rajendran", "Motta Rajendran"]
+  }
+],
+"horror":[
+  {
+    "id":"horror_movie_1",
+    "movie_name": "Demonte Colony 2",
+    "image_url": "https://akamaividz2.zee5.com/image/upload/w_336,h_504,c_scale,f_webp,q_auto:eco/resources/0-0-1z5625693/portrait/1920x770fc58f4ed700c48a5b5ba477cecd3c1f5.jpg",
+    "poster": "https://akamaividz2.zee5.com/image/upload/w_1170,h_658,c_scale/resources/0-0-1z5625693/list/ImageTitle8efab77c2e1a40699e2e6d44ccf157a7.jpg",
+    "description": "Years after Sam's death, his wife Debbie feels a connection between his spirit and estranged twins, Srini and Raghu. Soon, the three come across a sinister spirit out to kill them. Will they survive?",
+    "time-duration": "2h 26m",
+    "cast": ["Arulnithi", "Priya Bhavani Shankar", "Ramesh Thilak", "Sanath", "Yogi Babu"]
+  },
+  {
+    "id":"horror_movie_2",
+    "movie_name":"Airaa",
+    "image_url": "https://www.postoast.com/wp-content/uploads/2021/09/Airaa-tamil-horror-movie.jpg",
+    "poster": "https://m.media-amazon.com/images/S/pv-target-images/4a6addf667d25889c4209730e0510942e20b96506e08f44caa942de9ffb7592b.png",
+    "description": "Yamuna is on holiday at her grandma's village bungalow when she strikes upon the genius idea of shooting and uploading real-ghost videos. While shooting, Yamuna chances upon real ghost experiences, incident that test her belief system and rational thinking.",
+    "time-duration": "2h 22m",
+    "cast": ["Nayanthara", "Kalaiyarasan", "Gabriella Sellus", "M. S. Bhaskar", "Jayaprakash"]
+  },
+  {
+    "id":"horror_movie_3",
+    "movie_name": "Diary",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP1DduXvp-zgrhIR0ohrLsvgEQL63Ioegj6KZ_4zHDAxLfdL6viTUx6-ameeUECVxzF9o&usqp=CAU",
+    "poster": "https://img.nowrunning.com/content/movie/2021/dairy-25761/bg2.jpg",
+    "description": "A sub-inspector trainee lays his hand on a 16-year-old, unsolved case, and he sets out on a journey to unveil the mystery behind it. But fate and destiny put him on an exhilarating ride, and he has to find the common element that links his case and the passengers on the bus. Will he unravel the mystery revolving around this paranormal case?",
+    "time-duration": "2h 12m",
+    "cast": ["Arulnithi", "Pavithra Marimuthu", "Sha Ra", "Nakkalites Dhanam", "Jayaprakash"]
+  },
+  {
+    "id":"horror_movie_4",
+    "movie_name": "Lift",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQWlC0rU77hEA4kx6SCROua16m5cEFO38HjA&s",
+    "poster": "https://img.nowrunning.com/content/movie/2021/lift-25899/bg.jpg",
+    "description": "A usual working day turns unusual for Guru and Harini when they get trapped in their office. An eerie game unlocks a mystery, and a lift is their only way out.",
+    "time-duration": "2h 14m",
+    "cast": ["Kavin", "Amritha Aiyer", "Gayathri Reddy", "Vinoth Kishan", "Kiran Kaverappa"]
+  },
+  {
+    "id":"horror_movie_5",
+    "movie_name": "Pisasu",
+    "image_url": "https://images.odishatv.in/uploadimage/library/16_9/16_9_1/Pisasu__1720760892.webp",
+    "poster": "https://img.nowrunning.com/content/movie/2015/Pisasu/bg3.jpg",
+    "description": "After seeing Bhavana die in an accident, Siddharth begins to feel her supernatural presence in his house. Her father also helps him uncover the mystery.",
+    "time-duration": "1h 54m",
+    "cast": ["Naga", "Prayaga Martin", "Radha Ravi", "Rajkumar Pitchumani", "Kalyani Natarajan"]
+  },
+  {
+    "id":"horror_movie_6",
+    "movie_name": "Maya",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcS9CYwVsjz6DEbtQ8IApk31X8RqpAGyjyQRnvUnfeNIkOwPlSmp2e8Z6xleBFpMJVEs2MxBSA",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00032649-dcktruhhgs-landscape.jpg",
+    "description": "Apsara, a single mother, struggles to make a living by working in advertisements. Her life turns into an entangled mess when a ghost starts haunting her and causes the death of people known to her.",
+    "time-duration": "2h 21m",
+    "cast": ["Nayanthara", "Aari", "Amzath Khan", "Lakshmi Priyaa Chandramouli", "Mime Gopi"]
+  },
+  {
+    "id":"horror_movie_7",
+    "movie_name": "Pizza III",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPLCDgxGW8L2__M8ZpE7_tz1wPSjt_5ztYRN2EU04jTqxeQdLwo6RRojJwcU0NSH7Dq0g&usqp=CAU",
+    "poster": "https://img.nowrunning.com/content/movie/2021/pizza-25539/bg_pizza3themummy.jpg",
+    "description": "Aspiring hotelier Nalan gets embroiled in mysterious happenings at his restaurant. He delves deeper not knowing the ghost reigns over the kitchen!",
+    "time-duration": "2h 3m",
+    "cast": ["Ashok Selvan", "Samyuktha", "Kaali Venkat", "Ramesh Thilak", "Arjun Chidambaram"]
+  },
+  {
+    "id":"horror_movie_8",
+    "movie_name": "U Turn",
+    "image_url": "https://static.toiimg.com/photo/65795962.cms?imgsize=84835",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_AUZcm_HoyV8StpxzLp0xlooBIkmKmYMdfg&s",
+    "description": "The plot revolves around the death of motorists who break a traffic rule at a particular flyover in Hydearabad and subsequent pinning down of the culprit by an intern journalist and police inspector duo.",
+    "time-duration": "2 hours",
+    "cast": ["Samantha", "Aadhi Pinisetty", "Rahul Ravindran", "Bhumika Chawla", "Naren"]
+   },
+   {
+    "id":"horror_movie_9",
+    "movie_name": "Nenjam Marappathillai",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQD8SHaqTEohqRNz6AH5k2UMYt6HH6jq2ukrg&s",
+    "poster": "https://indiaglitz-media.s3.amazonaws.com/tamil/home/nenjammarappathillai-review532021m3.jpg",
+    "description": "Ramsay, a lustful businessman assaults and kills Mariyam, his children's nanny. But Mariyam returns from the dead to seek revenge on him.",
+    "time-duration": "2h 22m",
+    "cast": ["S. J. Suryah", "Regina Cassandra", "Nandita Swetha", "Vamsi Krishna", "Karunakaran"]
+   },
+   {
+    "id":"horror_movie_10",
+    "movie_name": "Sync",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGM72EZgxJLVd-dmCv0O-XiLnnmKOw2CxGfXY0mj9CKDXHWrVTPNGPTHbj6guYB18pRFs&usqp=CAU",
+    "poster": "https://image-resizer-cloud-api.akamaized.net/image/26C89B9B-443F-48DA-99A4-DAE09C8B93F8/0-16x9.jpg?width=1920&updatedTime=2024-11-28T19:12:03Z&dt=Web",
+    "description": "A group of friends connecting on a video call are haunted by the spirit of the girl they hit-and-run on their way back from a road trip.",
+    "time-duration": "1h 17m",
+    "cast": ["Vikram Prabhu", "Nikki Galrani", "Aishwarya Dutta", "Robo Shankar", "Imman Annachi"]
+   },
+   {
+    "id":"horror_movie_11",
+    "movie_name": "Asvins",
+    "image_url": "https://m.media-amazon.com/images/M/MV5BMWIzZjAwNTAtMmQ5My00YzdlLTlkNDAtZWNlYTMwOWI0YTJjXkEyXkFqcGc@._V1_.jpg",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00361926-ukxjfmzgxh-landscape.jpg",
+    "description": "Exploring an abandoned British mansion once owned by a mysterious archaeologist, a group of vloggers stumbles upon an evil presence lurking in its walls.",
+    "time-duration": "1h 50m",
+    "cast": ["Vasanth Ravi", "Ritika Singh", "Ashwin Kumar", "Saranya Ravichandran", "Mime Gopi"]
+   },
+   {
+    "id":"horror_movie_12",
+    "movie_name": "Katteri",
+    "image_url": "https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/katteri-et00082038-19-08-2018-11-28-32.jpg",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00082038-szuesvtlcl-landscape.jpg",
+    "description": "A group of bungling crooks heads to a deserted village to seek out hidden treasure — but aren't prepared for the gaggle of ghosts they encounter inside.",
+    "time-duration": "2h 1m",
+    "cast": ["Vaibhav", "Sonam Bajwa", "Aathmika", "Varalaxmi Sarathkumar", "Karunakaran"]
+   },
+   {
+    "id":"horror_movie_13",
+    "movie_name": "Bramayagam",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQgAj69RPTNvN6rc04dgK_UMLLC1HZtMVj_jUfkX9XQkF2OSVR0O2fKeXkTqlt0b3hwOA&usqp=CAU",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00388026-mhuqntbfef-landscape.jpg",
+    "description": "With a compelling narrative and stunning visuals, ‘Bramayugam’ is hailed by critics as a ‘black and white masterpiece’ and ‘cinematic revelation’. After narrowly escaping slavery, a folk singer in 17th century Kerala stumbles upon a mysterious mansion inhabited by a cook and his formidable master, forever altering his destiny. Rahul Sadasivan's horror mystery ‘Bramayugam’ stars Mammootty, Arjun Ashokan and Sidharth Bharathan.",
+    "time-duration": "2h 20m",
+    "cast": ["Jayam Ravi", "Trisha", "Sarath Kumar", "Soori", "Prakash Raj"]
+   },
+   {
+    "id":"horror_movie_14",
+    "movie_name": "Estate",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/c/c8/Estate_%282022_film%29.jpg",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlQzckDKYdA7fQ4E5NM_nwb5i4LWqFWbQ2Fw&s",
+    "description": "Two sisters attempt to win over their terminally ill, difficult-to-please Aunt in hopes of becoming the beneficiaries of her wealthy estate, only to find the rest of their greedy family members have the same idea.",
+    "time-duration": "1h 53m",
+    "cast": ["Vikram", "Parvathy Thiruvothu", "Kalaiyarasan", "Nithya Menen", "Samuthirakani"]
+   },
+   {
+    "id":"horror_movie_15",
+     "movie_name": "Game Over",
+     "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcCHG9-bj8URtWm76ulCeDr61zieA8VOQ17fN21r2YP6tz0g5WUmMBW--PNwH29t9LFB2Z",
+     "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00105181-nqurbjwmmg-landscape.jpg",
+     "description": "As a series of murders hit close to home, a video game designer with PTSD must confront her demons, or risk becoming their victim.",
+     "time-duration": "1h 43m",
+     "cast": ["Taapsee Pannu", "Vinodhini Vaidyanathan", "Parvathi T", "Ramya Subramanian", "Anish Kuruvilla"]
+   }
+],
+"action":[
+  {
+    "id":"action_movie_1",
+    "movie_name": "Vada Chennai",
+    "image_url": "https://m.media-amazon.com/images/S/pv-target-images/88df90537821ac4ee9530814fff1056772f83f68a776995d13aa57cf825b6252.jpg",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00042453-vlmjaefkul-landscape.jpg",
+    "description": "A proficient carrom player sets foot in the world of crime and joins forces with local gangsters to settle their feuds. However, he decides to take them down when they plan to wipe out his locality.",
+    "time-duration": "2h 44m", 
+    "cast": ["Dhanush", "Ameer", "Andrea Jeremiah", "Aishwarya Rajesh", "Samuthirakani"]
+  }, 
+  {
+    "id":"action_movie_2",
+    "movie_name": "Asuran",
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRTYMuo3sNkiHRedVvnvD9_3ZSf9pYj_KMC4fmvLHMMFHwDkbT-1C3etZ5NYz3--1oYxxDgaA",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00092591-bwwnuknwdc-landscape.jpg",
+    "description": "The teenage son of a farmer from an underprivileged caste kills a rich, upper caste landlord. How the pacifist farmer saves his hot-blooded son is the rest of the story.",
+    "time-duration": "2h 20m",
+    "cast": ["Dhanush", "Manju Warrier", "Pasupathy", "Ken Karunas", "Teejay"]
+  }, 
+  {
+    "id":"action_movie_3",
+    "movie_name": "Sarpatta Parambarai",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTgp6ch_2ZHEVC7XqoRullLmsagqu4A1TIuW-0WOFnHIQFfEkhnJNgtgwk8bRPBrGXAhmIQ",
+    "poster": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJcOb4jkMYdCT9d3s_PGQWu-GuzwJDuSBfkw&s",
+    "description": "A young man from the Black Town of 1970’s segregated Madras finds himself with the opportunity to redeem his boxing clan and himself from years of defeat. Can he do it? Will he be allowed to?",
+    "time-duration": "2h 53m",
+    "cast": ["Arya", "Pasupathy", "Dushara Vijayan", "Kalaiyarasan", "Anupama Kumar"]
+  },
+  {
+    "id":"action_movie_4",
+    "movie_name": "Thunivu",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb9Ooe29DBoMcUgKWCqMLu5RrfYBeID1mAVleOGl9yHH8RSrCNlUYcXCyt3i7pQgjniVlD",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00340798-gbledahbjw-landscape.jpg",
+    "description": "A major bank heist takes an unnerving turn when a mysterious interloper known only as Dark Devil begins to hijack the operation.",
+    "time-duration": "2h 26m",
+    "cast": ["Ajith Kumar", "Manju Warrier", "Samuthirakani", "John Kokken", "Veera"]
+  }, 
+  {
+    "id":"action_movie_5",
+    "movie_name": "Jailer",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDg4IkitIG8cCq4VvLx4JDDrGBhr39RkJpWjru13tywmTexYkBHb65nzwLELUgaMvvpXYl",
+    "poster": "https://www.koimoi.com/wp-content/new-galleries/2023/08/excitement-over-rajinikanths-entry-scene-in-jailer-causes-mumbai-theatre-to-pause-the-film.jpg",
+    "description": "Tiger Muthuvel Pandian, a retired jailer, is now a family man who leads an ordinary life. Trouble knocks on his door when his son, a diligent cop, investigates an idol smuggling mafia. And forces Muthuvel Pandian to step back into the dark world of his past.",
+    "time-duration": "2h 49m",
+    "cast": ["Rajinikanth", "Mohanlal", "Shivarajkumar", "Jackie Shroff", "Tamannaah"]
+  }, 
+  {
+    "id":"action_movie_6",
+    "movie_name": "Vettaiyan",
+    "image_url": "https://m.media-amazon.com/images/M/MV5BMjc2MGY3NGEtZGYyZC00MmIyLThjMjMtZGZhYmYzNzJhYTJjXkEyXkFqcGc@._V1_QL75_UX145_.jpg",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00379391-uwerqpdxtl-landscape.jpg",
+    "description": "A sought-after supercop gets caught in a series of unexpected events when he guns down a criminal in a murder case. Amidst his struggle to justify the act, he must confront his moral compass while fighting corrupt, larger-than-life forces. Vettaiyan explores the underbelly of crime investigations with one man's fight against a world, where justice is a rare commodity.",
+    "time-duration": "2h 43m",
+    "cast": ["Vikram", "Nayanthara", "Prakash Raj", "Bobby Simha", "Simran"]
+  }, 
+  {
+    "id":"action_movie_7",
+    "movie_name": "Leo",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZorcQ8q5HnwPB8MfA2I7-_BLk92pyAYlV5GPh9RvyznAjCBCzHs7LwdNVnJ3eELehoQSk",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00351731-nbbzqcnpry-landscape.jpg",
+    "description": "Violently pursued by criminals who insist he's a former gangster, a humble cafe owner fights to shield his family — and the truth about his identity.",
+    "time-duration": "2h 44m",
+    "cast": ["Vijay", "Trisha", "Sanjay Dutt", "Arjun", "Mansoor Ali Khan"]
+  }, 
+  {
+    "id":"action_movie_8",
+    "movie_name": "Jigarthanda Double X",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQdyO2NnXnXxfXsQMdgCfLw_mWRgr_tQzPc6XfcqY_14ow3bjNdGvFab0hCCCIlL9J91INj",
+    "poster": "https://static.tnn.in/thumb/msid-105095790,thumbsize-57950,width-1280,height-720,resizemode-75/105095790.jpg",
+    "description": "In the 1970s, an unlikely filmmaker teams up with a notorious gangster with a passion for Hollywood Westerns and dreams of being a star.",
+    "time-duration": "2h 52m",
+    "cast": ["Raghava Lawrence", "S. J. Suryah", "Nimisha Sajayan", "Priyanka Mohan", "Karunakaran"]
+  }, 
+  {
+    "id":"action_movie_9",
+    "movie_name": "Master",
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRswG6NZHowsW-JNXViNEDWtLlhbU2hezeURZYUP-h_Azckt1z5pLLBcua_SPRUXLCzuDs6Yw",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00110368-uyejyrghxt-landscape.jpg",
+    "description": "The film Master is about JD a Personality Development professor. He is addicted to alcohol due to depression. There comes a moment that forces him to leave the college and go work as a teacher at Juvenile for a few months. As JD spends time, he comes to understand that the youngsters of the detention home are being exploited by a deadly gangster Bhavani by pushing these young minds into addiction.",
+    "time-duration": "2h 59m",
+    "cast": []
+  }, 
+  {
+    "id":"action_movie_10",
+    "movie_name": "Beast",
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQCaeMM1WoEb5Rf6xL7MkwSOz7AsvUu8IF4uj7HeF3M-zaZBaPRmilpjpAfZK4_WQ7CVzuT",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00311733-jcsdkpzbjs-landscape.jpg",
+    "description": "A jaded former intelligence agent is pulled back into action when an attack at a mall creates a tense hostage situation.",
+    "time-duration": "2h 35m",
+    "cast": []
+  }, 
+  {
+    "id":"action_movie_11",
+    "movie_name": "Captain Miller",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSeYaFj8tnsMrxv5yjk2LtOS-1LbRmPVSL2c3FPO4NPgYykYtwvQEd8sr-dvJww17O8hrRG",
+    "poster": "https://img.theweek.in/content/dam/week/review/movies/images/2024/1/12/captain-miller-pic.jpg",
+    "description": "During British India, when the anti-colonial freedom struggle is at its peak, Esan Aka Annalesan enlists in the British army to gain dignity. The story unfolds with Esan leading a mutiny against the British tyranny stemming from brazen massacre of Indians. As the most wanted person in the Presidency, he emerges to protect his settlement and clan from the British regiment’s bludgeon attacks.",
+    "time-duration": "2h 37m",
+    "cast": []
+  }, 
+  {
+    "id":"action_movie_12",
+    "movie_name": "Thani Oruvan",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSIo6arI5yPMNpFRTF1Qgy-khg7yThN1zhtNzyRLbjMhUobuQNytamBUEM1i8qJUTI1K2Zq",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00032961-upmvweunzk-landscape.jpg",
+    "description": "Siddharth Abhimanyu is a rich and powerful scientist who commits many medical malpractices for money. Hence, Mithran, a dutiful IPS officer, sets out to expose him and bring him to justice.",
+    "time-duration": "2h 40m",
+    "cast": []
+  }, 
+  {
+    "id":"action_movie_13",
+    "movie_name": "Mahaan",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRZzjhzt0OjAkJ8gOLrc15d8boAx7Eqg8cIuBAbQduKpYV-R1e8--ZX7_vnKWY747nlf2xmow",
+    "poster": "https://igimage.indiaglitz.com/tamil/gallery/movies/chiyaan602021/main2.jpg",
+    "description": "'Mahaan' follows the turbulent journey of a middle-aged simple man, who later becomes a pride billionaire, followed by unexpected haywire challenges he starts to face soon after.",
+    "time-duration": "2h 42m",
+    "cast": []
+  }, 
+  {
+    "id":"action_movie_14",
+    "movie_name": "Maharaja",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTpbkEsutNLSiwujaN7Dq5ZVsde1LJ-F7yaP7uwMTQ8UWVxSM5yxPGq40OwI-rHUrKYNx46",
+    "poster": "https://cdn.varnam.my/wp-content/uploads/2024/07/Maharaja-m.jpg",
+    "description": "When his prized possession gets stolen, a barber seeks help from the police, who jeer at his request — until they learn what they're really looking for.",
+    "time-duration": "2h 21m",
+    "cast": []  
+  }, 
+  {
+    "id":"action_movie_15",
+    "movie_name": "Raayan",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/e/e4/Raayan_poster.jpg",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00398069-wyqcfbevjb-landscape.jpg",
+    "description": "Raayan, a devoted caretaker of his siblings, runs a small business to support them. The story follows his struggle to protect his family from unforeseen circumstances.",
+    "time-duration": "2h 25m",
+    "cast": []
+  }
+],
+"comedy":[
+  {
+    "id":"comedy_movie_1",
+    "movie_name": "kalakalappu 2",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTfIE4bR5roW1BcQ68K-2t0hBcP_qcJ_ryMw0527aFg54VgNFZvH70opKqx2oAr_BYMINan2w",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00064121-jbjzduregg-landscape.jpg",
+    "description": "Raghu discovers his father's ancestral property in Kashi, which Seenu manages. When a man named Ganesh deceives them, they resolve to find him and retrieve their money. Will they succeed in their mission, or will Ganesh outsmart them?",
+    "time-duration": "2h 34m",
+    "cast": []
+  }, 
+  {
+    "id":"comedy_movie_2",
+    "movie_name": "Mark Antony",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQxLuXYOke3LVVab-L2S69U-TtWXbyfSEBiqOStErShoLPDXetHsTjltmL2nYMegr_MySyF",
+    "poster": "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.indiatoday.in%2Fmovies%2Freviews%2Fstory%2Fmark-antony-review-sj-suryah-is-the-heart-and-soul-of-this-mindless-time-travel-film-2436076-2023-09-15&psig=AOvVaw2MkkQyLVH-y5eTYYIKl3hs&ust=1734292165341000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNDqtfaDqIoDFQAAAAAdAAAAABAE",
+    "description": "Mark,the son of gangster Antony,finds a telephone that has the ability to contact the past.",
+    "time-duration": "2h 30m",
+    "cast": []
+  }, 
+  {
+    "id":"comedy_movie_3",
+    "movie_name": "Remo",
+    "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSiE6ZxNXhtXo6Z8gmOHGgubShjQuFzEuIGAnQsdC__-H4uBYisTpcDi2vcLA01XdsRPPQ7",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00043239-rhhzltauqm-landscape.jpg",
+    "description": "An aspiring actor falls in love with an engaged doctor. He disguises himself as a female nurse to get close to her so that she calls off her engagement.",
+    "time-duration": "2h 25m",
+    "cast": []
+  }, 
+  {
+    "id":"comedy_movie_4",
+    "movie_name": "Don",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSzPSchTlpBxjPw2HM4pMvV5ZZxHkglHS1vxhVTsLTpxkHVNolZnryhmqTFsNGOWUPG4lS",
+    "poster": "https://cdn.gulte.com/wp-content/uploads/2022/05/l65920220425185628.webp",
+    "description": "Seeking a sense of purpose, a wayward college student navigates life on campus while enduring a controlling father and a disciplinarian professor.",
+    "time-duration": "2h 43m",
+    "cast": []
+  }, 
+  {
+    "id":"comedy_movie_5",
+    "movie_name": "Doctor",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSt0frOrnLgcANTtvmCGgZ9-hRqNu0JO-7q9-SPgpYjhPWwQu_I0PwVWThhF4G_El-bdxJw",
+    "poster": "https://live.staticflickr.com/65535/50070056113_ce887c2a4c_b.jpg",
+    "description": "When his fiancée’s niece is kidnapped, a stoic army doctor and his motley team launch a rescue operation in which they need both wit and their wits.",
+    "time-duration": "2h 28m",
+    "cast": []
+  }, 
+  {
+    "id":"comedy_movie_6",
+    "movie_name": "Comali",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQmI3l_RpteRjHy9dl2-_8G5dbRVIk4mt8_xA9nR84QvH4DRtLAhMZQhOsGu6TTu4_-3PAzjg",
+    "poster": "https://d229kpbsb5jevy.cloudfront.net/sony4/landscape_thumb/Comali_Detail_Landscape_Thumb.jpg",
+    "description": "Comali is a movie in which a boy named Ravi is in love with a girl named Nikitha. Ravi gets hit by a truck while trying to save her from a goon and ends up in a coma. He wakes up 16 years later and finds that a lot has changed around him.",
+    "time-duration": "2h 21m",
+    "cast": []
+  }, 
+  {
+    "id":"comedy_movie_7",
+    "movie_name": "Zombie",
+    "image_url": "https://m.media-amazon.com/images/M/MV5BMjU4YmUwMzQtNjFhOS00NWEwLThhOTUtMWY2MGZhODE3YzljXkEyXkFqcGc@._V1_.jpg",
+    "poster": "https://static.moviecrow.com/marquee/zombie-tamil-review---a-boring-attempt-at-a-zom-com-with-none-of-the-jokes-touching-the-funny-bone/168197_thumb_665.jpg",
+    "description": "This story revolves around friend who plan to go on vacation after tired of their day-to-day life. Meanwhile, when they try to escape from that bored hectic life they get attacked by Zombie on their vacation and struggle a lot to save their life from the zombies and in this hush they meet Yashika.",
+    "time-duration": "2h 6m",
+    "cast": []
+  }, 
+  {
+    "id":"comedy_movie_8",
+    "movie_name": "Gurkha",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSKV-RRYedQBLcBYh--QEc9Dzt-BQ0veLXYIVn7_kF7rnLM17oYzDbvup2zwXnrUExPs8Wn",
+    "poster": "https://i.ytimg.com/vi/NmFKuiX47YY/maxresdefault.jpg",
+    "description": "The security guard of a mall, who belongs to the Gurkha community, becomes the saviour of several people who have been kept under siege by some terrorists.",
+    "time-duration": "2h 25m",
+    "cast": []
+  }, 
+  {
+    "id":"comedy_movie_9",
+    "movie_name": "DD Returns",
+    "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSXK-RL9t-96yvGlix6l6MvQL1DwuBGsWZPao3OJuRsofUg6Ie61ZITd8RaXxFfrhvjZVQRBw",
+    "poster": "https://static.toiimg.com/photo/101796187.cms",
+    "description": "Sathish steals money for his girlfriend from a gangster and hides it in a haunted mansion. But when he and his friends go to retrieve the bag, the ghosts force them to play a deadly game.",
+    "time-duration": "2h 20m",
+    "cast": []
+  }, 
+  {
+    "id":"comedy_movie_10",
+    "movie_name": "Maragadha Naanayam",
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ610sNI4thLDMfab--0oI_OWQ6mWHHjh8eC-EHcXh62esoyci6_Lg2aB6lwkh4Y_02dg9apg",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00054615-svemypqtcm-landscape.jpg",
+    "description": "Maragatha Naanayam is a 2017 fantasy comedy film starring Aadhi and Nikki Galrani. Sengutavan is a jewellery thief, who works for Ramdoss. They go after a cursed stone called Maragatha Naanayam with the help of three souls. They face problems from Twinkle Ramanathan, a local gangster, who is also in search of the same stone. They escape from Twinkle and find the original stone but it is cursed. They go back to the grave site to return the stone.",
+    "time-duration": "2h 12m",
+    "cast": []
+  }, 
+  {
+    "id":"comedy_movie_11",
+    "movie_name": "Dhilluku Dhuddu 2",
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQppEfm-U2xtdZSjhShSP5I9tLpDb_QAgVJ6oDvTF-KhnwYhaSKJwO_h7gMPbLMMU38NyJO",
+    "poster": "https://i.ytimg.com/vi/MB0vhP6m9SQ/maxresdefault.jpg",
+    "description": "In a bid to escape from Viji's antics, his neighbours lure him to fall in love with Maya. However, everything turns upside down when he realises that a ghost is protecting Maya",
+    "time-duration": "1h 59m",
+    "cast": []
+  }, 
+  {
+    "id":"comedy_movie_12",
+    "movie_name": "Dhilluku Dhuddu",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQFt_rXZGImbiZJ1TKpCta7WK24ZsLd_9XO5qijCRNvNqr-ujhDCdEe-ViTOc26Gq9CWnXFyA",
+    "poster": "https://sund-images.sunnxt.com/7271/1920x1080_DhillukuDhuddu_7271_f8f4f769-580d-4463-aa07-b409901482c2.jpg",
+    "description": "Kumar and Kajal are in love but her father is against the match and tries to have Kumar killed with the help of Mani. Things go awry when Mani invites Kumar's family to a haunted house.",
+    "time-duration": "2h 13m",
+    "cast": []
+  }, 
+  {
+   "id":"comedy_movie_13", 
+    "movie_name": "Naai Sekar Returns",
+    "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTzoPS0Fg5lPhEmp3Zi5QxMUTGkw02tXZ9lI_2lTtAUBWfvaw6s2XRaopcoH40qGmyfC29CIQ",
+    "poster": "https://i.ytimg.com/vi/ar0N3KCemH0/maxresdefault.jpg",
+    "description": "When a bungling dognapper accidentally steals a powerful don’s pet, he is thrust into a wild caper that sparks a quest for his magical childhood dog.",
+    "time-duration": "2h 12m",
+    "cast": []
+  }, 
+  {
+    "id":"comedy_movie_14",
+    "movie_name": "Dikkiloona",
+    "image_url": "https://m.media-amazon.com/images/M/MV5BMzgwYjA5ZDktOWVjZi00ZDM5LTk2ZDctYjgyNjQzZTIyNGZhXkEyXkFqcGc@._V1_.jpg",
+    "poster": "https://indiaglitz-media.s3.amazonaws.com/tamil/home/dikkiloona-review9092021m2.jpg",
+    "description": "Hilarity ensues when Mani, a married man, goes back in time using a time machine to change his unpleasant past. Where will Mani land up?",
+    "time-duration": "2h 24m",
+    "cast": []
+  }, 
+  {
+    "id":"comedy_movie_15",
+    "movie_name": "Varalaru Mukkiyam",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrbfhapNLRreTW95Se9xRjKEqObh5jXySD7-R5MWvnQyNkmXSj0_YSMoT0TmBusFa23QQ3",
+    "poster": "https://i.ytimg.com/vi/RuX_NDlveq0/maxresdefault.jpg",
+    "description": "A wayward young man's life is turned on its head when he begins to doggedly pursue the daughter of the new family in his neighborhood",
+    "time-duration": "2h 20m",
+    "cast": []
+  }
+],
+"romance":[
+  {
+    "id":"romance_movie_1",
+    "movie_name": "Adiyae",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdBshSpI1DIbbfPedunvx87CYPUUXbpA5wTEvbDOmTA-E6l0bifMfRlEW1AvHAVyolXpIZIw",
+    "poster": "https://d229kpbsb5jevy.cloudfront.net/sony4/videoasset_images/adiyae_landscape_thumb.jpg",
+    "description": "When a depressed Jeeva meets with a freak accident, he wakes up to a bizarre utopian alternate reality. Living the most ideal life, Jeeva finds a meaningful purpose, but fate has other plans when he gets pulled back into reality.",
+    "time-duration": "2h 8m",
+    "cast": []
+  },
+  {
+    "id":"romance_movie_2",
+    "movie_name": "Star",
+    "image_url": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Star_%28film%29_poster.jpg/220px-Star_%28film%29_poster.jpg",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00396811-twplrvwgya-landscape.jpg",
+    "description": "A young man's lifelong dream of becoming an actor, supported by his father, is tested when a tragic accident leaves him unrecognizable and shattered. Amidst love lost and responsibilities abandoned, a new relationship sparks hope. Star explores Kalaiarasan's journey to reclaim his dreams against all odds.",
+    "time-duration": "2h 38m",
+    "cast": []
+  },
+  {
+    "id":"romance_movie_3",
+    "movie_name": "Thiruchitrambalam",
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSlCZsI24nQ7UhiCORtJY740JAjZaslgx_WZQgAMIIkDVgxL6pJjh0ZJqmSW92opfYbSUlY",
+    "poster": "https://moviegalleri.net/wp-content/gallery/thiruchitrambalam-images/Thiruchitrambalam-92c6726.jpg",
+    "description": "A light-hearted tale about a food delivery guy Pazham, his breezy friendship with Shobana & a quirky bond with a quick-witted grandfather. Get swept in the fun n' frolic as they cheerfully navigate their messy lives.",
+    "time-duration": "2h 15m",
+    "cast": []
+  },
+  {
+    "id":"romance_movie_4",
+    "movie_name": "Sita Ramam",
+    "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ7tf85dhFPzs8gTFz9NfLnc0U9pWuiB8mZwFvhYl5hl_1ZNH-0LdKCdq0tDOKdFyFLXXsRxg",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00329656-jsszpmwnqt-landscape.jpg",
+    "description": "Afreen, a rebellious Pakistani student sets ablaze the car of an Indian in London. Refused to apologize, Afreen is asked to return 1 Million in 1 month. Angered Afreen comes back to Pakistan to get the money from her grandfather. The late grandfather assigns a letter delivering task to Afreen, written by Ram to Sita. Afreen sets out to find Ram and gradually unveils the story of Sita and Ram",
+    "time-duration": "2h 43m",
+    "cast": []
+  },
+  {
+    "id":"romance_movie_5",
+    "movie_name": "Hey Sinamika",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9MwVbHejIZWty99t0eXGok4VX-xFKZxJN82rhVgoypySjF8ghuEJISDypOSz5rIUNciektQ",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00311473-ulsagdtpcb-landscape.jpg",
+    "description": "An unhappy Mouna plots to divorce her talkative husband Yaazhan, and asks therapist Malarvizhi to woo him — but faces a dilemma when love blooms.",
+    "time-duration": "2h 25m",
+    "cast": []
+  },
+  {
+    "id":"romance_movie_6",
+    "movie_name": "Love Today",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYCDEOR1wh7xLRlS71MhE0JCMp7VTu3cFt-HIFfl6txMeHsb3tJXsTUHQKstdBtxl546MEhA",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00343241-pcgvesxwjj-landscape.jpg",
+    "description": "Before they get married, a couple must swap phones for 24 hours at the behest of the bride-to-be's suspicious father.",
+    "time-duration": "2h 34m",
+    "cast": []
+  },
+  {
+    "id":"romance_movie_7",
+    "movie_name": "Romeo",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHZbhbCPzXKO4ZTkUM_9hpAUzD4FkIDs6mJc-6ZtLO08GXCtYthKSCVJJt8Zn3CmkvgGQY_w",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00393423-pczzchbnht-landscape.jpg",
+    "description": "Arivu, a businessman seeking love after sacrificing youth for work, meets Leela, a dreamer trapped by family expectations. Forced into marriage, they struggle as her dreams clash with reality. Arivu produces a film for her, facing inner turmoil. Despite challenges, their love strengthens, leading to Leela's stardom with Arivu's unwavering support.",
+    "time-duration": "2h 30m",
+    "cast": []
+  },
+  {
+    "id":"romance_movie_8",
+    "movie_name": "O Kadhal Kanmani",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTbbOVbgHzKYQTJ0AfZqNcZa2PMpD3NW0J48mk0L5zqXlFxrW_0F0BdcH7WWXDx2RaiBYu2_w",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00028786-bnrepeyvuk-landscape.jpg",
+    "description": "Two young lovers are compatible in every way - they even agree that marriage is futile. However, their emotions are not so easily managed, especially when they witness the unconditional love of the older couple with whom they live.",
+    "time-duration": "2h 19m",
+    "cast": []
+  },
+  {
+    "id":"romance_movie_9",
+    "movie_name": "Sivakumarin Sabadham",
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8Xi9RhEPHm66qBvklU0C34IdtEnHYliKQPrqCSrYThILbniyg_2muXS5eZ32s_1G0zv-f",
+    "poster": "https://images.plex.tv/photo?size=large-1280&url=https%3A%2F%2Fmetadata-static.plex.tv%2F0%2Fgracenote%2F0a2eb70d7800b9fdccb314a9b1c64a34.jpg",
+    "description": "Sivakumar's family were master weavers, but their heritage sank without a trace. The happy-go-lucky man finds a purpose and vows to revive his lost legacy.",
+    "time-duration": "2h 24m",
+     "cast": []
+  },
+  {
+    "id":"romance_movie_10",
+    "movie_name": "Kannum Kannum Kollaiyadithaal",
+    "image_url": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQ5PqyIUIeI5Bscnj8YfZ9ky-oyU8nU256c4IDFKEBz1Dl-x2icWRvZrsIpPePoBx_5pgMr-w",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00070924-mxvkjehfyx-landscape.jpg",
+    "description": "Two wily online scammers mend their fraudulent ways after meeting the girls of their dreams — until a deceitful discovery throws their world for a loop.",
+    "time-duration": "2h 40m",
+    "cast": []
+  },
+  {
+    "id":"romance_movie_11",
+    "movie_name": "Rasavathi",
+    "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSHsd6czWHtX4RmfgMyWNlHd0EBXradBpIbURIb4RR81S14rEjwakDvIiStx44GN9poAGk36A",
+    "poster": "https://i.ytimg.com/vi/URV7NC5R2Qw/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAX3qSX4zyKQgHnV8WkvE6bvfBVTQ",
+    "description": "A Siddha doctor who wants to stay away from past violence has to face a psychopathic police inspector who tries to ruin his relationship and kill him just because he bumped into him accidentally.",
+    "time-duration": "2h 28m",
+    "cast": []
+  },
+  {
+    "id":"romance_movie_12",
+    "movie_name": "Saba Nayagan",
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRGKf3Bt26jjhe9TS1LbSnH4TdyPcAy1Vn23aZQ8zjOjv5Zg2PGYaClnOXBxtDJeHKlVYj7Ww",
+    "poster": "https://assets-in.bmscdn.com/discovery-catalog/events/et00380404-kzabsptwdt-landscape.jpg",
+    "description": "Arrested for nuisance, Saba spins breakup tales to melt a sympathetic cop, hoping to charm his way out. Whose story is he narrating, and will his plan work?",
+    "time-duration": "2h 2m",
+    "cast": []
+  },
+  {
+    "id":"romance_movie_13",
+    "movie_name": "Jeeva",
+    "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQ0K9svVxnAvKsDU0WfW1ziZrnyiXa9Y9n1kWQ-AOJobl_uBxMjiZjc0ufJYqRqxFhwoJp9",
+    "poster": "https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6215/1366215-i-f2d179b6eaef",
+    "description": "Jeeva dreams of playing for the Indian cricket team someday. But his love life and politics in the game of sports become obstacles to his ambition.",
+    "time-duration": "2h 32m",
+    "cast": []
+  },
+  {
+    "id":"romance_movie_14",
+    "movie_name": "Kaathuvaakula Rendu Kaadhal",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoEl9Y6o0zPek-zhD1nRBsRyvozaYwYuOue34WxtJRuPMoQLGw-BRSJfuIOHyz8AcjsU4pwQ",
+    "poster": "https://images.ottplay.com/s3_backdrop/Kaathuvaakula_Rendu_Kaadhal_2022_movie_s3_backdrop_1_889.jpeg",
+    "description": "Unlucky since birth, Rambo finds hope when he falls in love with Kanmani and Khatija. His life gets complicated further when they both pursue him.",
+    "time-duration": "2h 39m",
+    "cast": []
+  },
+  {
+    "id":"romance_movie_15",
+    "movie_name": "Anegan",
+    "image_url": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSe_gsrXGoy4sf8fFUKy4agw3qUctwETgxnLre9wJgs94BC1XHJfK-888OXAQHdXaDRKTJFEw",
+    "poster": "https://cinemachaat.com/wp-content/uploads/2015/03/anegan-poster.jpg",
+    "description": "Madhu, an animator, gets thoughts about her past life, but her psychiatrist believes it to be a figment of her imagination. Madhu happens to meet Ashwin, the man she was in love with in her past life.",
+    "time-duration": "2h 39m",
+    "cast": []
+  }
+]
+}
+}

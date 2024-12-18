@@ -88,9 +88,6 @@ form.addEventListener("submit", (event) => {
     });
 });
 
-if(isValid){
-  window.location.replace="front.html"
-}
 
 email.addEventListener("input", function() {
   emailError.textContent = "";

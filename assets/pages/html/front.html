@@ -3,47 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/front.css" />
+    <link rel="stylesheet" href="/assets/css/front.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
     <title>MOVIE TIME</title>
-    <script src="/front.js" defer type="module"></script>
+    <script src="/assets/script/front.js" defer type="module"></script>
   </head>
   <body>
     <header>
       
       <div class="head">
         <div class="header">
-          <img src="/assets/image/Screenshot 2024-12-02 164814.png" alt="ott-logo" class="logo" />
-          <h1 class="ott-name"></h1>
-
-          <div class="search-container">
-            <input type="text" id="searchBar" placeholder="Search movies..." />
-           
-          </div>
-
-          <img src="/assets/image/11349247.png" alt="Profile"class="Profile"id="profileIcon" />
-          <div id="profileDropdown" class="dropdown-content">
-            <p id="usernameDisplay"></p>
-            <button id="logoutButton">Logout</button>
+          <img src="/assets/image/Screenshot 2024-12-08 215709.png" alt="ott-logo" class="logo" title="logo" draggable="false"/>
+      
+          <div class="right-section">
+            <div class="search-container">
+              <input type="text" id="searchBar" autocomplete="off" placeholder="Search movies..." />
+              <i class="fa-solid fa-xmark" id="clear_icon"></i>
+              <button id="searchButton">Search</button>
+            </div>
+            <img src="/assets/image/11349247.png" alt="Profile" class="Profile" id="profileIcon" title="profile" draggable="false"/>
+            <div id="profileDropdown" class="dropdown-content">
+              <p id="usernameDisplay"></p>
+              <button id="logoutButton">Logout</button>
+            </div>
           </div>
         </div>
         <div class="line"></div>
       </div>
+      
     </header>
+    <main>
     <div id="resultsContainer" class="results-container" ></div>
+    
 
     <div class="slider-container">
-      <h1 id="prevButton">❮</h1>
+      <span id="prevButton"><i class="fa-solid fa-chevron-left"></i></span>
       <div class="movie_slide_container" id="movieSlideContainer"></div>
-      <h1 id="nextButton">❯</h1>
+      <span id="nextButton"><i class="fa-solid fa-chevron-right"></i></span>
     </div>
 
     <!-- thriller movie heading -->
     <div class="heading_and_icon">
       <h2 id="thriller">Thriller Movies</h2>
+      <!-- <a href="" class="see_more"><h3>see more>></h3></a> -->
     </div>
 
     <!-- thriller movie rendering -->
@@ -56,6 +61,7 @@
     <!-- horror movie heading -->
     <div class="heading_and_icon">
       <h2 id="horror">Horror Movies</h2>
+      <!-- <a href="" class="see_more"><h3>see more>></h3></a> -->
     </div>
 
     <!-- horror movie rendering -->
@@ -68,6 +74,7 @@
     <!-- action movie heading -->
     <div class="heading_and_icon">
       <h2 id="action">Action Movies</h2>
+      <!-- <a href="" class="see_more"><h3>see more>></h3></a> -->
     </div>
 
     <!-- action movie rendering -->
@@ -80,6 +87,7 @@
     <!-- comedy movie heading -->
     <div class="heading_and_icon">
       <h2 id="comedy">Comedy Movies</h2>
+      <!-- <a href="" class="see_more"><h3>see more>></h3></a> -->
     </div>
 
     <!-- comedy movie rendering -->
@@ -92,6 +100,7 @@
     <!-- romance movie heading -->
     <div class="heading_and_icon">
       <h2 id="romance">Romance Movies</h2>
+      <!-- <a href="" class="see_more"><h3>see more>></h3></a> -->
     </div>
 
     <!-- romance movie rendering -->
@@ -109,6 +118,11 @@
   </div>
 </div>
 
+</main>
+
+<footer>
+   <div class="footer"></div>
+</footer>
 
   </body>
 </html>

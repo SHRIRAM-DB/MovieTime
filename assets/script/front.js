@@ -1,7 +1,6 @@
 // Toggle profile dropdown
 const profileIcon = document.getElementById("profileIcon");
-profileIcon.addEventListener("click", function(event) {
-    event.stopPropagation(); // Prevent the event from bubbling up
+profileIcon.addEventListener("click", function() {
     const dropdown = document.getElementById("profileDropdown");
     dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
 });
@@ -26,19 +25,18 @@ logoutButton.addEventListener("click", function() {
     logout = true;
 
     // Redirect to the index or login page
-    window.location.replace("index.html");
+    window.location.replace("../html/index.html");
 });
 
-// This part may not be necessary because the redirect is handled directly above.
-// You can remove this condition or adjust it if needed.
 if (logout) {
-    window.location.replace("index.html");
+    window.location.replace("../html/index.html");
     isLoggedIn=false;
 }
 
 
 
-const movies = []; // Array to store movie names    
+const movies = []; 
+const id=[];  
 
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
@@ -63,7 +61,7 @@ const movies = []; // Array to store movie names
   // Function to upload JSON to Firebase and render movies
   async function uploadJSONToFirebase() {
       try {
-          const response = await fetch('front.json');
+          const response = await fetch('/assets/json/front.json');
           if (!response.ok){
             throw new Error("JSON file not found!");
           } 
@@ -82,8 +80,8 @@ const movies = []; // Array to store movie names
   data.category.movie_slide.forEach(movie => {
     movieSlideContainer.innerHTML += `
         <div class="slide">
-         <a href="secondPage.html?id=${movie.id}" style="height: 100%;">
-            <img src="${movie.image_url}" class="movie_slide" alt="${movie.movie_name}">
+        <a href="movieDetails.html?id=${movie.id}" style="height: 100%;" draggable="false">
+            <img src="${movie.image_url}" class="movie_slide" alt="${movie.movie_name}" draggable="false">
         </div>`;
 });
 
@@ -108,10 +106,10 @@ nextButton.addEventListener("click", () => {
         currentSlide = 0; // Reset to start
         movieSlideContainer.style.transform = `translateX(0)`;
         setTimeout(() => {
-            movieSlideContainer.style.transition = "transform 0.5s ease-in-out"; // Reapply transition
-            currentSlide++;
-            updateSlider();
-        }, 0);
+          movieSlideContainer.style.transition = "transform 0.5s ease-in-out"; // Reapply transition
+          currentSlide++;
+          updateSlider();
+      }, 0);
     } else {
         currentSlide++;
         updateSlider();
@@ -125,16 +123,15 @@ prevButton.addEventListener("click", () => {
         currentSlide = slides.length; // Jump to the last slide
         movieSlideContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
         setTimeout(() => {
-            movieSlideContainer.style.transition = "transform 0.5s ease-in-out";
-            currentSlide--;
-            updateSlider();
-        }, 0);
+          movieSlideContainer.style.transition = "transform 0.5s ease-in-out";
+          currentSlide--;
+          updateSlider();
+      }, 0);
     } else {
         currentSlide--;
         updateSlider();
     }
 });
-
 
           const thrillerMovieContainer = document.getElementById("thrillerMoviesContainer");
           const thrillerPrevButton = document.getElementById("thrillerPrevButton");
@@ -145,22 +142,22 @@ prevButton.addEventListener("click", () => {
           const thriller_movie_container = document.getElementById("thrillerMoviesContainer");
           data.category.thriller.forEach(movie => {
             movies.push(movie.movie_name);
+            id.push(movie.id);  
               thriller_movie_container.innerHTML += `
-              <a href="secondPage.html?id=${movie.id}">
+                <a href="movieDetails.html?id=${movie.id}" draggable="false">
                   <div class="Thriller_Movie_Container">
-                    <img src="${movie.image_url}" class="movie" alt="${movie.movie_name}">
-                    <p class="hidden-movie-name">${movie.movie_name}</p> 
-                  </div>
-                      
+                      <img src="${movie.image_url}" class="movie" id="movie_image" alt="${movie.movie_name}" draggable="false">
+                      <p class="hidden-movie-name">${movie.movie_name}</p> 
+                  </div> 
                   </a>`; 
           });
-          
+
           let thrillerIndex = 0; // Tracks the current slide
           const thrillerMovies = document.querySelectorAll(".Thriller_Movie_Container");
           const thrillerTotalMovies = thrillerMovies.length;
           const thrillerMovieWidth = 188; // Width of each movie card + margin
 
-          // Update the carousel view
+// Update the carousel view
 function updateThrillerCarousel() {
     thrillerMovieContainer.style.transform = `translateX(-${thrillerIndex * thrillerMovieWidth}px)`;
 }
@@ -189,10 +186,11 @@ const horrorNextButton = document.getElementById("horrorNextButton");
           const horror_movie_container=document.getElementById("horrorMovieContainer")
           data.category.horror.forEach(movie => {
             movies.push(movie.movie_name);
+            id.push(movie.id);
             horror_movie_container.innerHTML +=`
-              <a href="secondPage.html?id=${movie.id}">
+              <a href="movieDetails.html?id=${movie.id}" draggable="false">
                 <div class="Horror_Movie_Container" >
-                <img src="${movie.image_url}" class="movie" alt="${movie.movie_name}">
+                <img src="${movie.image_url}" class="movie" alt="${movie.movie_name}" draggable="false">
                   <p class="hidden-movie-name">${movie.movie_name}</p>
                 </div>
                 </a>`;
@@ -231,10 +229,11 @@ const actionNextButton = document.getElementById("actionNextButton");
           const action_movie_container=document.getElementById("actionMovieContainer")
           data.category.action.forEach(movie => {
             movies.push(movie.movie_name);
+            id.push(movie.id);
             action_movie_container.innerHTML +=`
-              <a href="secondPage.html?id=${movie.id}">
+              <a href="movieDetails.html?id=${movie.id}" draggable="false">
                 <div class="Action_Movie_Container" >
-                <img src="${movie.image_url}" class="movie" alt="${movie.movie_name}">
+                <img src="${movie.image_url}" class="movie" alt="${movie.movie_name}" draggable="false">
                   <p class="hidden-movie-name">${movie.movie_name}</p>
                 </div>
                 </a>`;
@@ -273,10 +272,11 @@ const actionNextButton = document.getElementById("actionNextButton");
         // Render comedy movies
         data.category.comedy.forEach(movie => {
             movies.push(movie.movie_name);
+            id.push(movie.id);
            comedy_movie_container.innerHTML += `
-             <a href="secondPage.html?id=${movie.id}">
+             <a href="movieDetails.html?id=${movie.id}" draggable="false">
                 <div class="comedy_Movie_Container">
-                    <img src="${movie.image_url}" class="movie" alt="${movie.movie_name}">
+                    <img src="${movie.image_url}" class="movie"  alt="${movie.movie_name}" draggable="false">
                     <p class="hidden-movie-name">${movie.movie_name}</p>
                 </div>
                 </a>`;
@@ -317,10 +317,11 @@ const actionNextButton = document.getElementById("actionNextButton");
           const romance_movie_container=document.getElementById("romanceMovieContainer")
           data.category.romance.forEach(movie => {
             movies.push(movie.movie_name);
+            id.push(movie.id);
             romance_movie_container.innerHTML +=`
-              <a href="secondPage.html?id=${movie.id}">
+              <a href="movieDetails.html?id=${movie.id}" draggable="false">
                 <div class="romance_Movie_Container" >
-                <img src="${movie.image_url}" class="movie" alt="${movie.movie_name}">
+                <img src="${movie.image_url}" class="movie" alt="${movie.movie_name}" draggable="false">
                   <p class="hidden-movie-name">${movie.movie_name}"</p>
                 </div>
                 </a>`;
@@ -358,7 +359,6 @@ romancePrevButton.addEventListener("click", () => {
 
 document.getElementById("loading-container").style.display = 'none';
 
-
       } catch (error) {
           console.error("Error uploading JSON data:", error);
           document.getElementById("thrillerMoviesContainer").innerHTML = "<p>Failed to load movies.</p>";
@@ -371,6 +371,8 @@ document.getElementById("loading-container").style.display = 'none';
   
   // Upload data on page load
   window.addEventListener("load", uploadJSONToFirebase);
+
+
 
 
   const movieSlideContainer = document.getElementById("movieSlideContainer");
@@ -405,10 +407,20 @@ if (storedUsername) {
         const resultItem = document.createElement("div");
         resultItem.textContent = movie;
         resultItem.className = "result-item";
+        resultsContainer.style.scrollbarWidth = "thin";
+       
+        const searchButton = document.getElementById('searchButton');
 
-        resultItem.addEventListener("click", () => {
-            window.location.href = `secondPage.html?id=${movie.id}`; // Navigate to second page with movie ID
-          });
+        searchButton.addEventListener("click", () => {
+          
+          for (let i = 0; i < movies.length; i++) {
+            if (searchBar.value === movies[i]) {
+              window.location.href = `movieDetails.html?id=${id[i]}`;
+            }
+          }
+          
+       });
+      
 
         resultsContainer.appendChild(resultItem);
   
@@ -417,11 +429,13 @@ if (storedUsername) {
           searchBar.value = movie; // Fill the search bar with the selected movie
           resultsContainer.style.display = "none"; // Hide results
         });
+       
       });
-  
+      
       resultsContainer.style.display = "block"; // Show results
     } else {
-      resultsContainer.style.display = "none"; // Hide if no results
+      resultsContainer.style.display = "none"; // Show message
+      console.log(resultsContainer)
     }
   }
 
@@ -446,5 +460,13 @@ if (storedUsername) {
       resultsContainer.style.display = "none";
     }
   });
+
+ const clear_icon = document.getElementById("clear_icon")
+
+ clear_icon.addEventListener("click" , () => {
+  searchBar.value = "";
+ })
   
+
+  console.log("movie id:",id);
   console.log("Movie Names Array:", movies);
