@@ -118,6 +118,6 @@ password.addEventListener("input", function() {
 const signUpLink = document.getElementById("sign-up");
 signUpLink.addEventListener("click", (event) => {
   event.preventDefault(); // Prevent the default link navigation
-  window.location.replace("Sign-up.html"); // Navigate without adding to history
+  window.location.replace("/assets/pages/html/Sign-up.html"); // Navigate without adding to history
 });
 

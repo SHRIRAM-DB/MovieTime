@@ -213,7 +213,7 @@ conformPassword.addEventListener("input", function() {
 const loginLink = document.getElementById("login");
 loginLink.addEventListener("click", (event) => {
   event.preventDefault(); // Prevent the default link navigation
-  window.location.replace("index.html"); // Navigate without adding to history
+  window.location.replace("/index.html"); // Navigate without adding to history
 });
 
 
