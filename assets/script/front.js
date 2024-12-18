@@ -25,11 +25,11 @@ logoutButton.addEventListener("click", function() {
     logout = true;
 
     // Redirect to the index or login page
-    window.location.replace("../html/index.html");
+    window.location.replace("/index.html");
 });
 
 if (logout) {
-    window.location.replace("../html/index.html");
+    window.location.replace("/index.html");
     isLoggedIn=false;
 }
 
