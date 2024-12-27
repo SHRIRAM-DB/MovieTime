@@ -282,11 +282,13 @@ align-items: center;
 padding-left: 50px;
 height: 100px;
 margin-bottom: -40px;
+justify-content: space-between;
 }
 
 .see_more{
-color: lightblue;
+color: red;
 text-decoration: underline;
+cursor: pointer;
 }
 
 .movie {
@@ -333,6 +335,7 @@ background-color: black;
 padding: 2%;
 transition: transform 0.5s ease-in-out;
 width: 100%;
+overflow-x: scroll;
 }
 
 .Thriller_Movie_Container{
@@ -348,54 +351,6 @@ border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
-#thrillerPrevButton {
-  left: 20px;
-  border-radius: 10px;
-  background-color:black;
-  
-} 
-
-#thrillerNextButton {
-  right: 20px;
-  background-color: black;
-  border-radius: 10px;
-}
-
-
-/* Overlay container for buttons */
-.overlay {
-  position: absolute;
-  bottom: -50px; /* Initially hidden */
-  left: 0;
-  width: 100%;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.7); 
-  padding: 20px ;
-  transition: bottom 0.3s ease-in-out;
-
-}
-
-
-/* Button styles */
-.watch-now .watch-later {
-  background-color: rgba(255, 255, 255, 0.8);
-  border: none;
-  color: black;
-  padding: 10px 15px;
-  margin: 5px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 14px;
-  transition: background-color 0.3s;
-}
-
-button:hover {
-  background-color: rgba(255, 255, 255, 1);
-  opacity: 1;
-  z-index: 3;
-}
-
 .Thriller_Movie_Container:hover .movie {
   transform: scale(1.1);
 }
@@ -407,6 +362,8 @@ button:hover {
   display: flex;
   align-items: center;
   padding: 2%;
+  width: 100%;
+  overflow-x: scroll;
 }
 
 .Horror_Movie_Container{
@@ -423,17 +380,6 @@ button:hover {
 }
 
 
-#horrorPrevButton {
-    left: 20px;
-    background-color: black;
-    border-radius: 10px;
-}
-
-#horrorNextButton {
-    right: 20px;
-    background-color: black;
-    border-radius: 10px;
-}
 
 /* action */
 
@@ -441,6 +387,8 @@ button:hover {
   display: flex;
   align-items: center;
   padding: 2%;
+  width: 100%;
+  overflow-x: scroll;
 }
 
 .Action_Movie_Container{
@@ -455,19 +403,7 @@ button:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-
-#actionPrevButton {
-    left: 20px;
-    background-color: black;
-    border-radius: 10px;
-}
-
-#actionNextButton {
-    right: 20px;
-    background-color: black;
-    border-radius: 10px;
-}  
+ 
 
 /* comedy */
 
@@ -475,6 +411,8 @@ button:hover {
   display: flex;
   align-items: center;
   padding: 2%;
+  width: 100%;
+  overflow-x: scroll;
 }
 
 .Comedy_Movie_Container{
@@ -489,19 +427,7 @@ button:hover {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-
-#comedyPrevButton {
-    left: 20px;
-    background-color: black;
-    border-radius: 10px;
-}
-
-#comedyNextButton {
-    right: 20px;
-    background-color: black;
-    border-radius: 10px;
-}  
+ 
 
 /* romancea */
 
@@ -509,6 +435,8 @@ button:hover {
   display: flex;
   align-items: center;
   padding: 2%;
+  width: 100%;
+  overflow-x: scroll;
 }
 
 .Romance_Movie_Container{
@@ -524,18 +452,6 @@ button:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
-#romancePrevButton {
-    left: 20px;
-    background-color: black;
-    border-radius: 10px;
-}
-
-#romanceNextButton {
-    right: 20px;
-    background-color: black;
-    border-radius: 10px;
-}  
 
 /* Full-page black background during loading */
 .loading-container {

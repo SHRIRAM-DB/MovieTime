@@ -148,11 +148,6 @@ prevButton.addEventListener("click", () => {
     }
 });
 
-          const thrillerMovieContainer = document.getElementById("thrillerMoviesContainer");
-          const thrillerPrevButton = document.getElementById("thrillerPrevButton");
-          const thrillerNextButton = document.getElementById("thrillerNextButton");
-
-
           // Render thriller movies
           const thriller_movie_container = document.getElementById("thrillerMoviesContainer");
           data.category.thriller.forEach(movie => {
@@ -166,36 +161,8 @@ prevButton.addEventListener("click", () => {
                   </div> 
                   </a>`; 
           });
+      
 
-          let thrillerIndex = 0; // Tracks the current slide
-          const thrillerMovies = document.querySelectorAll(".Thriller_Movie_Container");
-          const thrillerTotalMovies = thrillerMovies.length;
-          const thrillerMovieWidth = 188; // Width of each movie card + margin
-
-// Update the carousel view
-function updateThrillerCarousel() {
-    thrillerMovieContainer.style.transform = `translateX(-${thrillerIndex * thrillerMovieWidth}px)`;
-}
-
-// Next button functionality
-thrillerNextButton.addEventListener("click", () => {
-    if (thrillerIndex < thrillerTotalMovies - 1) {
-        thrillerIndex = Math.min(thrillerIndex + 5, thrillerTotalMovies - 1); // Prevent overflow
-        updateThrillerCarousel();
-    }
-});
-
-// prev button functionality
-thrillerPrevButton.addEventListener("click", () => {
-    if (thrillerIndex > 0) {
-        thrillerIndex = Math.max(thrillerIndex - 5, 0); // Prevent underflow
-        updateThrillerCarousel();
-   
-    }
-});
-
-const horrorPrevButton = document.getElementById("horrorPrevButton");
-const horrorNextButton = document.getElementById("horrorNextButton");
 
           //Render horror movies
           const horror_movie_container=document.getElementById("horrorMovieContainer")
@@ -211,36 +178,6 @@ const horrorNextButton = document.getElementById("horrorNextButton");
                 </a>`;
           });
 
-          let horrorIndex = 0; // Tracks the current slide
-          const horrorMovies = document.querySelectorAll(".Horror_Movie_Container");
-          const horrorTotalMovies = horrorMovies.length;
-          const horrorMovieWidth = 188; // Width of each movie card + margin
-
-                     // Update the carousel view
-function updateHorrorCarousel() {
-    horror_movie_container.style.transform = `translateX(-${horrorIndex * horrorMovieWidth}px)`;
-    horror_movie_container.style.transition = "transform 0.5s ease";
-}
-
-// Next button functionality
-horrorNextButton.addEventListener("click", () => {
-    if (horrorIndex < horrorTotalMovies - 1) {
-        horrorIndex = Math.min(horrorIndex + 5, horrorTotalMovies - 1); // Prevent overflow
-        updateHorrorCarousel();
-    }
-});
-
-// Previous button functionality
-horrorPrevButton.addEventListener("click", () => {
-    if (horrorIndex > 0) {
-        horrorIndex = Math.max(horrorIndex - 5, 0); // Prevent underflow
-        updateHorrorCarousel();
-    }
-});
-
-const actionPrevButton = document.getElementById("actionPrevButton");
-const actionNextButton = document.getElementById("actionNextButton");
-
           const action_movie_container=document.getElementById("actionMovieContainer")
           data.category.action.forEach(movie => {
             movies.push(movie.movie_name);
@@ -254,35 +191,7 @@ const actionNextButton = document.getElementById("actionNextButton");
                 </a>`;
           });
 
-          let actionIndex = 0; // Tracks the current slide
-          const actionMovies = document.querySelectorAll(".Action_Movie_Container");
-          const actionTotalMovies = actionMovies.length;
-          const actionMovieWidth = 188;
-
-          function updateActionCarousel() {
-            action_movie_container.style.transform = `translateX(-${actionIndex * actionMovieWidth}px)`;
-            action_movie_container.style.transition = "transform 0.5s ease";
-        }
-        
-        // Next button functionality
-        actionNextButton.addEventListener("click", () => {
-            if (actionIndex < actionTotalMovies - 1) {
-                actionIndex = Math.min(actionIndex + 5, actionTotalMovies - 1); // Prevent overflow
-                updateActionCarousel();
-            }
-        });
-        
-        // Previous button functionality
-        actionPrevButton.addEventListener("click", () => {
-            if (actionIndex > 0) {
-                actionIndex = Math.max(actionIndex - 5, 0); // Prevent underflow
-                updateActionCarousel();
-            }
-        });
-         
         const comedy_movie_container = document.getElementById("comedyMovieContainer");
-        const comedyPrevButton = document.getElementById("comedyPrevButton");
-        const comedyNextButton = document.getElementById("comedyNextButton");
         
         // Render comedy movies
         data.category.comedy.forEach(movie => {
@@ -297,38 +206,6 @@ const actionNextButton = document.getElementById("actionNextButton");
                 </a>`;
         });
         
-        // Variables for carousel functionality
-        let comedyIndex = 0; // Tracks the current slide
-        const comedyMovies = document.querySelectorAll(".comedy_Movie_Container");
-        const comedyTotalMovies = comedyMovies.length;
-        const comedyMovieWidth = 134.5; // Width of each movie card + margin
-       
-        
-        // Update the carousel view
-        function updateComedyCarousel() {
-           comedy_movie_container.style.transform = `translateX(-${comedyIndex * comedyMovieWidth}px)`;
-            comedy_movie_container.style.transition = "transform 0.5s ease-in-out";
-        }
-        
-        // Next button functionality
-        comedyNextButton.addEventListener("click", () => {
-            if (comedyIndex < Math.ceil(comedyTotalMovies + 5)) {
-                comedyIndex=comedyIndex+5; // Move to the next group of 5
-                updateComedyCarousel();
-            }
-        });
-        
-        // Previous button functionality
-        comedyPrevButton.addEventListener("click", () => {
-            if (comedyIndex > 0) {
-                comedyIndex=comedyIndex-5; // Move to the previous group of 5
-                updateComedyCarousel();
-            }
-        });
-        
-        const romancePrevButton = document.getElementById("romancePrevButton");
-        const romanceNextButton = document.getElementById("romanceNextButton");
-        const romanceMovieContainer = document.getElementById("romanceMovieContainer");
           const romance_movie_container=document.getElementById("romanceMovieContainer")
           data.category.romance.forEach(movie => {
             movies.push(movie.movie_name);
@@ -341,36 +218,6 @@ const actionNextButton = document.getElementById("actionNextButton");
                 </div>
                 </a>`;
           });
-
- // Carousel variables
-let romanceIndex = 0; // Tracks the current slide
-const romanceMovies = document.querySelectorAll(".romance_Movie_Container");
-const romanceTotalMovies = romanceMovies.length;
-const romanceMovieWidth = 224.5; // Width of each movie card + margin
-const itemsPerSlide = 4; // Number of movies visible per slide
-
-// Update the carousel view
-function updateRomanceCarousel() {
-    romanceMovieContainer.style.transform = `translateX(-${romanceIndex * romanceMovieWidth * itemsPerSlide}px)`;
-    romanceMovieContainer.style.transition = "transform 0.5s ease"; // Smooth transition
-}
-
-// Next button functionality
-romanceNextButton.addEventListener("click", () => {
-    const maxIndex = Math.ceil(romanceTotalMovies / itemsPerSlide) - 1; // Total number of slides
-    if (romanceIndex < maxIndex) {
-        romanceIndex++; // Move to the next slide
-        updateRomanceCarousel();
-    }
-});
-
-// Previous button functionality
-romancePrevButton.addEventListener("click", () => {
-    if (romanceIndex > 0) {
-        romanceIndex--; // Move to the previous slide
-        updateRomanceCarousel();
-    }
-});
 
 document.getElementById("loading-container").style.display = 'none';
 
@@ -388,11 +235,6 @@ document.getElementById("loading-container").style.display = 'none';
   window.addEventListener("load", uploadJSONToFirebase);
 
 
-
-
-  
-
-  
   // Select the element where the username will be displayed
 const usernameDisplay = document.getElementById("usernameDisplay");
 
@@ -483,3 +325,81 @@ if (storedUsername) {
 
   console.log("movie id:",id);
   console.log("Movie Names Array:", movies);
+
+
+const thriller_see_more=document.getElementById("thriller_see_more");
+const thriller_movie_container = document.getElementById("thrillerMoviesContainer");
+thriller_see_more.addEventListener("click", () => {
+  // Toggle the 'flex-wrap' style for the parent container
+  thriller_movie_container.style.flexWrap = thriller_movie_container.style.flexWrap === "wrap" ? "nowrap" : "wrap";
+  thriller_movie_container.style.gap = "20px";
+  if(thriller_movie_container.style.flexWrap === "wrap"){
+    thriller_see_more.textContent = "See Less>>";
+    }
+    else{
+      thriller_see_more.textContent = "See More>>"
+    }
+});
+
+const horror_see_more = document.getElementById("horror_see_more");
+const horror_movie_container=document.getElementById("horrorMovieContainer")
+
+horror_see_more.addEventListener("click", () => {
+  horror_movie_container.style.flexWrap = horror_movie_container.style.flexWrap === "wrap" ? "nowrap" : "wrap";
+  horror_movie_container.style.gap = "20px"
+  if(horror_movie_container.style.flexWrap == "wrap"){
+    horror_see_more.textContent = "See Less>>";
+    }
+    else{
+      horror_see_more.textContent = "See More>>"
+    }
+})
+
+const action_see_more = document.getElementById("action_see_more");
+const action_movie_container=document.getElementById("actionMovieContainer")
+
+action_see_more.addEventListener("click" , () => {
+  action_movie_container.style.flexWrap = action_movie_container.style.flexWrap === "wrap" ? "nowrap" : "wrap";
+  action_movie_container.style.gap = "20px";
+  if(action_movie_container.style.flexWrap == "wrap"){
+    action_see_more.textContent = "See Less>>";
+    }
+    else{
+      action_see_more.textContent = "See More>>"
+    }
+})
+
+
+const comedy_see_more = document.getElementById("comedy_see_more");
+const comedy_movie_container = document.getElementById("comedyMovieContainer");
+
+comedy_see_more.addEventListener("click", () => {
+comedy_movie_container.style.flexWrap = comedy_movie_container.style.flexWrap === "wrap" ? "nowrap" : "wrap";
+comedy_movie_container.style.gap = "18px";
+if(comedy_movie_container.style.flexWrap == "wrap"){
+  comedy_movie_container.style.width = "110%"
+  comedy_see_more.textContent = "See Less>>";
+  // comedy_movie_container.style.overflowX = "hidden";
+  }
+  else{
+      comedy_movie_container.style.width = "100%"
+    comedy_see_more.textContent = "See More>>"
+  }
+})
+
+const romance_see_more = document.getElementById("romance_see_more");
+const romance_movie_container=document.getElementById("romanceMovieContainer")
+
+romance_see_more.addEventListener("click", () => {
+  romance_movie_container.style.flexWrap = romance_movie_container.style.flexWrap === "wrap" ? "nowrap" : "wrap";
+  romance_movie_container.style.gap = "20px";
+
+  if(romance_movie_container.style.flexWrap == "wrap"){
+  romance_movie_container.style.width = "110%"
+  romance_see_more.textContent = "See Less>>";
+  }
+  else{
+      romance_movie_container.style.width = "100%"
+    romance_see_more.textContent = "See More>>"
+  }
+})
