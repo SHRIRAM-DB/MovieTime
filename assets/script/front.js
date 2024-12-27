@@ -288,8 +288,12 @@ if (storedUsername) {
       
       resultsContainer.style.display = "block"; // Show results
     } else {
-      resultsContainer.style.display = "none"; // Show message
-      console.log(resultsContainer)
+      resultsContainer.textContent = "No results found.";
+      resultsContainer.style.color = "black";
+      resultsContainer.style.textAlign = "center";
+      resultsContainer.style.backgroundColor = "white"
+      resultsContainer.style.padding = "10px"
+      resultsContainer.style.display = "block"; // Show message
     }
   }
 
