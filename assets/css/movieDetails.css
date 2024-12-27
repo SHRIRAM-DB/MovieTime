@@ -1,101 +1,268 @@
+*{
+  margin: 0;
+  box-sizing: border-box;
+ scrollbar-width: none;
+ font-family: Arial, Helvetica, sans-serif;
+}
+
 body{
-    margin: 0;
-    box-sizing: border-box;
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+background-color: black;
+display: flex;
+justify-content: center;
+align-items: center;
+overflow-x: hidden;
+scrollbar-color: white;
+}
+
+#back{
+position: absolute;
+background-color: transparent;
+border: 1px solid transparent;
+color: white;
+border-radius: 10px;
+top: 40px;
+left: 40px;
+font-size: 40px;
+cursor: pointer;
+}
+
+.related_movie{
+color: white;
+text-align: center;
 }
 
 #movieDetailContainer {
-    height: 100%;
-    color: white;
- }
+  width: 100%;
+  height: 100%;
+  color: white;
+}
 
 .movie_description{
- text-align: center;
- padding-top: 630px;
- margin: 0;
- padding-left: 40px;
- padding-right: 40px;
- padding-bottom: 0;
- font-family: sans-serif;
+text-align: center;
+padding-top: 630px;
+margin: 0;
+padding-left: 40px;
+padding-right: 40px;
+padding-bottom: 0;
+font-family: sans-serif;
 }
 
 .movie_name{
-    margin: 0;
-    position: relative;
-    top: 600px;
-    left: 60px;
+  margin: 0;
+  position: relative;
+  top: 600px;
+  left: 60px;
 }
 
 .watch_now{
-    padding: 15px;
-    margin: 30px;
-    overflow: hidden;
-    background-color: whitesmoke;
-    color: black;
-    font-weight: bolder;
-    cursor: pointer;
-    font-size: 20px;
+  padding: 15px;
+  margin: 30px;
+  margin-top: 40px;
+  overflow: hidden;
+  border: 1px solid red;
+  background-color: red;
+  color: white;
+  font-weight: bolder;
+  cursor: pointer;
+  font-size: 20px;
+  bottom: 10px;
 }
 
-.watch_now:hover{
-    background-color: #808080;
-    color: white;
-    scrollbar-width:inherit;
+.watch_now:active{
+  border: 1px solid #3498db;
+  background-color: #3498db;
+  color: black;
+  scrollbar-width: inherit;
+}
+
+.movie_cast{
+padding-left: 950px;
+position: relative;
+bottom: 90px;
+}
+
+.cast{
+padding-left: 950px;
+position: relative;
+bottom: 100px;
 }
 
 .loading-container {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .dots-loader {  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    position: relative;
-    height: 50%;
-  }
-  
-  .dot {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    background-color: #3498db; /* Blue color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  height: 50%;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #3498db; /* Blue color */
+  opacity: 0;
+  animation: dot-blink 1.5s infinite;
+}
+
+.dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 1s;
+}
+
+
+@keyframes dot-blink {
+  0% {
     opacity: 0;
-    animation: dot-blink 1.5s infinite;
   }
-  
-  .dot:nth-child(1) {
-    animation-delay: 0s;
+  50% {
+    opacity: 1;
   }
-  
-  .dot:nth-child(2) {
-    animation-delay: 0.5s;
+  100% {
+    opacity: 0;
   }
-  
-  .dot:nth-child(3) {
-    animation-delay: 1s;
-  }
-  
-  
-  @keyframes dot-blink {
-    0% {
-      opacity: 0;
-    }
-    50% {
-      opacity: 1;
-    }
-    100% {
-      opacity: 0;
-    }
-  }
+}
+
+.movie {
+  width: 250px;
+  margin-left: 10px;
+  border: 2px solid gray;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  height: 340px;
+  margin-right: 15px;
+}
+
+.movie:hover{
+  transform: scale(1.1);
+}
+
+/* thriller */
+
+.thriller_movie_container{
+display: flex;
+background-color: black;
+padding: 2%;
+transition: transform 0.5s ease-in-out;
+width: 100%;
+flex-wrap: wrap;
+gap: 18px;
+}
+
+.Thriller_Movie_Container{
+border-radius: 10px;  
+ margin-left: 10px;
+ width: 250px; /* Width of each movie card */
+ margin: 10px;
+ text-align: center;
+}
+
+
+/* horror */
+.horror_movie_container {
+display: flex;
+background-color: black;
+padding: 2%;
+transition: transform 0.5s ease-in-out;
+width: 100%;
+flex-wrap: wrap;
+gap: 18px;
+}
+
+.Horror_Movie_Container{
+border-radius: 10px;  
+margin-left: 10px;
+width: 250px; /* Width of each movie card */
+margin: 10px;
+text-align: center;
+}
+
+
+/* action */
+
+.action_movie_container{
+  display: flex;
+  background-color: black;
+  padding: 2%;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.Action_Movie_Container{
+  border-radius: 10px;  
+  margin-left: 10px;
+  width: 250px; 
+  margin: 10px;
+  text-align: center;
+}
+
+
+/* comedy */
+
+.comedy_movie_container{
+  display: flex;
+  background-color: black;
+  padding: 2%;
+  transition: transform 0.5s ease-in-out;
+  width: 110%;
+  margin-left: 10px;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.Comedy_Movie_Container{
+  border-radius: 10px;  
+  margin-left: 10px;
+  width: 250px; 
+  margin: 10px;
+  text-align: center;
+}
+
+
+/* romancea */
+
+.romance_movie_container{
+  display: flex;
+  background-color: black;
+  padding: 2%;
+  margin-left: 8px;
+  transition: transform 0.5s ease-in-out;
+  width: 110%;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.Romance_Movie_Container{
+  border-radius: 10px;  
+  margin-left: 10px;
+  width: 250px;
+  margin: 10px;
+  text-align: center;
+}
+
+
+.movie{
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+

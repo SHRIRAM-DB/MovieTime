@@ -21,8 +21,19 @@ logoutButton.addEventListener("click", function() {
     sessionStorage.clear();
     alert("Logged out successfully!");
 
+    if ('caches' in window) {
+      caches.keys().then(function (keyList) {
+          return Promise.all(
+              keyList.map(function (key) {
+                  return caches.delete(key); // Clears browser cache
+              })
+          );
+      });
+  }    
+
     // Set logout to true
     logout = true;
+
 
     // Redirect to the index or login page
     window.location.replace("/index.html");
@@ -75,7 +86,11 @@ const id=[];
               console.log(`Uploaded category: ${category}`);
           }
           
-  
+          
+  const movieSlideContainer = document.getElementById("movieSlideContainer");
+  const prevButton = document.getElementById("prevButton");
+  const nextButton = document.getElementById("nextButton");
+
   // Add movies to the slider
   data.category.movie_slide.forEach(movie => {
     movieSlideContainer.innerHTML += `
@@ -375,9 +390,6 @@ document.getElementById("loading-container").style.display = 'none';
 
 
 
-  const movieSlideContainer = document.getElementById("movieSlideContainer");
-  const prevButton = document.getElementById("prevButton");
-  const nextButton = document.getElementById("nextButton");
   
 
   
@@ -465,6 +477,7 @@ if (storedUsername) {
 
  clear_icon.addEventListener("click" , () => {
   searchBar.value = "";
+  resultsContainer.style.display = "none"
  })
   
 

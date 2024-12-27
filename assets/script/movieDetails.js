@@ -29,6 +29,7 @@ const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 
+
 async function uploadJSONToFirebase() {
   try {
     // Fetch the JSON file
@@ -46,6 +47,12 @@ async function uploadJSONToFirebase() {
       await setDoc(docRef, { movies: categoryData });
       console.log(`Uploaded category: ${category}`);
     }
+    
+    const back = document.getElementById("back")
+    back.style.display="none"
+    back.addEventListener("click" , () => {
+      window.location.replace("/assets/Pages/html/front.html")
+    })
 
     // Ensure movieId is valid before proceeding
     if (!movieId) {
@@ -73,15 +80,70 @@ async function uploadJSONToFirebase() {
       movieDetailContainer.style.backgroundPosition = "center";
       movieDetailContainer.style.overflow = "hidden"
       movieDetailContainer.innerHTML = `
-        <h1 class=movie_name >${movieDetails.movie_name}</h1>
-        <p class=movie_description >${movieDetails.description}</p>
+        <h1 class="movie_name" >${movieDetails.movie_name}</h1>
+        <p class="movie_description" >${movieDetails.description}</p>
         <button class="watch_now" > <i class="fa-solid fa-play"></i> Watch Now </button>
+         <h2 class="cast">Cast</h2>
+        <p class="movie_cast">${movieDetails.cast}</p>
       `;
     } else {
       console.error("Movie not found!");
     }
-
+     back.style.display="block"
     document.getElementById("loading-container").style.display = 'none';
+
+const thriller_movie_container = document.getElementById("thrillerMoviesContainer");
+data.category.thriller.forEach(movie => {  
+    thriller_movie_container.innerHTML += `
+      <a href="movieDetails.html?id=${movie.id}" draggable="false">
+        <div class="Thriller_Movie_Container">
+        <img src="${movie.image_url}" class="movie" id="movie_image" alt="${movie.movie_name}" draggable="false">
+        </div> 
+      </a>`; 
+        
+});
+
+const horror_movie_container=document.getElementById("horrorMovieContainer")
+data.category.horror.forEach(movie => {
+  horror_movie_container.innerHTML +=`
+    <a href="movieDetails.html?id=${movie.id}" draggable="false">
+      <div class="Horror_Movie_Container" >
+      <img src="${movie.image_url}" class="movie" alt="${movie.movie_name}" draggable="false">
+      </div>
+      </a>`;
+});
+
+const action_movie_container=document.getElementById("actionMovieContainer")
+data.category.action.forEach(movie => {
+  action_movie_container.innerHTML +=`
+    <a href="movieDetails.html?id=${movie.id}" draggable="false">
+      <div class="Action_Movie_Container">
+      <img src="${movie.image_url}" class="movie" alt="${movie.movie_name}" draggable="false">
+      </div>
+      </a>`;
+});
+
+const comedy_movie_container = document.getElementById("comedyMovieContainer");
+data.category.comedy.forEach(movie => {
+ comedy_movie_container.innerHTML += `
+   <a href="movieDetails.html?id=${movie.id}" draggable="false">
+      <div class="comedy_Movie_Container">
+          <img src="${movie.image_url}" class="movie"  alt="${movie.movie_name}" draggable="false">
+      </div>
+      </a>`;
+});
+
+
+const romance_movie_container=document.getElementById("romanceMovieContainer")
+data.category.romance.forEach(movie => {
+  romance_movie_container.innerHTML +=`
+    <a href="movieDetails.html?id=${movie.id}" draggable="false">
+      <div class="romance_Movie_Container" >
+      <img src="${movie.image_url}" class="movie" alt="${movie.movie_name}" draggable="false">
+      </div>
+      </a>`;
+});
+
 
 
   } catch (error) {
@@ -92,4 +154,3 @@ async function uploadJSONToFirebase() {
 
 // Call the function
 uploadJSONToFirebase();
-
