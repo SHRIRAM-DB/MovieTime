@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/css/front.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <title>MOVIE TIME</title>
+    <script src="/assets/script/front.js" defer type="module"></script>
+  </head>
+  <body>
+    <header>
+      
+      <div class="head">
+        <div class="header">
+          <img src="/assets/image/Screenshot 2024-12-08 215709.png" alt="ott-logo" class="logo" title="logo" draggable="false"/>
+      
+          <div class="right-section">
+            <div class="search-container">
+              <input type="text" id="searchBar" autocomplete="off" placeholder="Search movies..." />
+              <i class="fa-solid fa-xmark" id="clear_icon"></i>
+              <button id="searchButton">Search</button>
+            </div>
+            <img src="/assets/image/11349247.png" alt="Profile" class="Profile" id="profileIcon" title="profile" draggable="false"/>
+            <div id="profileDropdown" class="dropdown-content">
+              <p id="usernameDisplay"></p>
+              <button id="logoutButton">Logout</button>
+            </div>
+          </div>
+        </div>
+        <div class="line"></div>
+      </div>
+      
+    </header>
+    <main>
+    <div id="resultsContainer" class="results-container" ></div>
+    
+
+    <div class="slider-container">
+      <span id="prevButton"><i class="fa-solid fa-chevron-left"></i></span>
+      <div class="movie_slide_container" id="movieSlideContainer"></div>
+      <span id="nextButton"><i class="fa-solid fa-chevron-right"></i></span>
+    </div>
+
+    <!-- thriller movie heading -->
+    <div class="heading_and_icon">
+      <h2 id="thriller">Thriller Movies</h2>
+      <h3 class="see_more"  id="thriller_see_more">see more>></h3>
+    </div>
+
+    <!-- thriller movie rendering -->
+      <div class="thriller_movie_container" id="thrillerMoviesContainer"></div>
+
+    <!-- horror movie heading -->
+    <div class="heading_and_icon">
+      <h2 id="horror">Horror Movies</h2>
+      <h3 class="see_more"  id="horror_see_more">see more>></h3>
+    </div>
+
+    <!-- horror movie rendering -->
+      <div class="horror_movie_container" id="horrorMovieContainer"></div>
+
+    <!-- action movie heading -->
+    <div class="heading_and_icon">
+      <h2 id="action">Action Movies</h2>
+      <h3 class="see_more" id="action_see_more">see more>></h3>
+    </div>
+
+    <!-- action movie rendering -->
+      <div class="action_movie_container" id="actionMovieContainer"></div>
+
+    <!-- comedy movie heading -->
+    <div class="heading_and_icon">
+      <h2 id="comedy">Comedy Movies</h2>
+      <h3 class="see_more" id="comedy_see_more">see more>></h3>
+    </div>
+
+    <!-- comedy movie rendering -->
+      <div class="comedy_movie_container" id="comedyMovieContainer"></div>
+
+    <!-- romance movie heading -->
+    <div class="heading_and_icon">
+      <h2 id="romance">Romance Movies</h2>
+      <h3 class="see_more"  id="romance_see_more">see more>></h3>
+    </div>
+
+    <!-- romance movie rendering -->
+      <div class="romance_movie_container" id="romanceMovieContainer"></div>
+
+
+   <div id="loading-container" class="loading-container">
+  <div class="dots-loader">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+</div>
+
+</main>
+
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2024 Movie Time. All rights reserved.</p>
+    <p>
+      <a href="#privacy-policy">Privacy Policy</a> |
+      <a href="#terms-of-service">Terms of Service</a> |
+      <a href="#contact-us">Contact Us</a>
+    </p>
+    <p style="font-size: large; font-weight: bold;">Follow Us:</p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com" target="_blank" class="facebook" aria-label="Facebook">
+        <i class="fab fa-facebook"></i>
+      </a>
+      <a href="https://www.twitter.com" target="_blank" class="twitter" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.instagram.com" target="_blank" class="instagram" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.youtube.com" target="_blank" class="youtube" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+  </footer>
+
+
+  </body>
+</html>

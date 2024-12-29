@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/login.css">
+    <title>Document</title>
+</head>
+<body>
+    <form novalidate id="loginPage">
+        <h1>Login</h1>
+        <input type="email" id="email" required placeholder="email" minlength="4">
+        <span id="emailError"></span>
+        <div class="see-password">
+            <span id="show-password-toggle">Show</span>
+          </div>
+        <input type="password" id="password" placeholder="password" required  minlength="7" >
+        <span id="passwordError"></span>
+        <button type="submit" id="login-btn" >Login</button>
+
+        <p>Don't have an account? <a href="/assets/pages/html/Sign-up.html" id="sign-up">Sign up</a></p>
+    </form>
+    <script type="module" src="/assets/script/login.js"></script>
+</body>
+
+</html>
