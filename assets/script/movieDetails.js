@@ -21,7 +21,7 @@ const rent =document.getElementById("rent");
 rent.style.display = "none";
 rent.addEventListener("click" , () => {
 
-  window.location.replace("/assets/Pages/html/rent.html");
+  window.location.href="/assets/Pages/html/rent.html";
 });
 
 // const watchlist = document.getElementById("watchlist");
