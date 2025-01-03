@@ -13,16 +13,20 @@ align-items: center;
 overflow-x: hidden;
 }
 
+
 #back{
-position: absolute;
-background-color: transparent;
-border: 1px solid transparent;
-color: white;
-border-radius: 10px;
-top: 40px;
-left: 40px;
-font-size: 40px;
 cursor: pointer;
+background-color: transparent;
+color: white;
+font-size: x-large;
+font-weight: bold;
+border: none;
+font-size: xx-large;
+font-weight: bold;
+z-index: 2;
+top: 20px;
+left: 20px;
+position: absolute;
 }
 
 #related_movie{
@@ -35,7 +39,6 @@ margin-top: 2px;
   width: 100%;
   height: 100%;
   color: white;
-
 }
 
 .movie_description{
@@ -53,7 +56,7 @@ bottom: 40px;
   left: 60px;
 }
 
-.watch_now{
+.rent{
 padding: 15px;
 background-color: red;
 color: white;
@@ -64,12 +67,35 @@ font-size: x-large;
 font-weight: bold;
 bottom: 90px;
 cursor: pointer;
+left: 20px;
 }
 
-.watch_now:active{
+.rent:active{
   transition: transform 0.3s ease-in-out;
-  transform: scale(0.9);
+  transform: scale(0.7);
 }
+
+/* 
+#watchlist{
+  padding: 15px;
+  background-color: red;
+  color: white;
+  border: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: x-large;
+  font-weight: bolder;
+  position: absolute;
+  left: 16%;
+  bottom: 90px;
+}
+
+#watchlist:active{
+  transition: transform 0.3s ease-in-out;
+  transform: scale(0.7);
+} */
 
 .movie_cast{
 padding-left: 950px;

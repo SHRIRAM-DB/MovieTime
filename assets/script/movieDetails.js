@@ -8,21 +8,27 @@ console.log(movieId)
 // Log the movie ID (for testing purposes)
 console.log("Movie ID:", movieId);
 
-    
+const related_movie = document.getElementById("related_movie");
+related_movie.style.display = "none"
+
 const back = document.getElementById("back")
 back.style.display="none"
 back.addEventListener("click" , () => {
-  window.location.replace("/assets/Pages/html/front.html")
-})
+  window.location.replace("/assets/Pages/html/front.html");
+});
 
-const watch_now = document.getElementById("watch_now");
-watch_now.style.display = "none"
-watch_now.addEventListener("click", () => {
-  window.location.replace(`/assets/Pages/html/video.html`)
-})
+const rent =document.getElementById("rent");
+rent.style.display = "none";
+rent.addEventListener("click" , () => {
 
-const related_movie = document.getElementById("related_movie");
-related_movie.style.display = "none"
+  window.location.replace("/assets/Pages/html/rent.html");
+});
+
+// const watchlist = document.getElementById("watchlist");
+// watchlist.style.display = "none"
+// watchlist.addEventListener("click" , () => {
+//   alert("this movie add to watchlist")
+// });
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
 import { getFirestore, doc, setDoc,collection } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
@@ -80,7 +86,7 @@ async function uploadJSONToFirebase() {
       if (movieDetails) break; // Exit loop once movie is found
     }
 
-    if (movieDetails) {
+    if (movieDetails){
       const movieDetailContainer = document.getElementById("movieDetailContainer");
       movieDetailContainer.style.background = `
         linear-gradient(0deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%),
@@ -99,9 +105,10 @@ async function uploadJSONToFirebase() {
       console.error("Movie not found!");
     }
 
-    related_movie.style.display = "block"
-    watch_now.style.display = "block"
-    back.style.display="block"
+    // watchlist.style.display = "block"
+    rent.style.display = "block";
+    related_movie.style.display = "block";
+    back.style.display="block";
     document.getElementById("loading-container").style.display = 'none';
 
 const thriller_movie_container = document.getElementById("thrillerMoviesContainer");

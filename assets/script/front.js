@@ -1,3 +1,5 @@
+
+
 // Toggle profile dropdown
 const profileIcon = document.getElementById("profileIcon");
 profileIcon.addEventListener("click", function() {
@@ -20,20 +22,9 @@ const logoutButton = document.getElementById("logoutButton");
 logoutButton.addEventListener("click", function() {
     sessionStorage.clear();
     alert("Logged out successfully!");
-
-    if ('caches' in window) {
-      caches.keys().then(function (keyList) {
-          return Promise.all(
-              keyList.map(function (key) {
-                  return caches.delete(key); // Clears browser cache
-              })
-          );
-      });
-  }    
-
+  
     // Set logout to true
     logout = true;
-
 
     // Redirect to the index or login page
     window.location.replace("/index.html");
@@ -288,7 +279,7 @@ if (storedUsername) {
       
       resultsContainer.style.display = "block"; // Show results
     } else {
-      resultsContainer.textContent = "No results found.";
+      resultsContainer.textContent = "No Results Found.";
       resultsContainer.style.color = "black";
       resultsContainer.style.textAlign = "center";
       resultsContainer.style.backgroundColor = "white"
@@ -324,8 +315,16 @@ if (storedUsername) {
  clear_icon.addEventListener("click" , () => {
   searchBar.value = "";
   resultsContainer.style.display = "none"
+  clear_icon.style.display = "none"
  })
   
+ clear_icon.style.display = "none";
+
+searchBar.addEventListener("click", () => {
+  if(searchBar.value==0){
+    clear_icon.style.display = "block"
+    }
+})
 
   console.log("movie id:",id);
   console.log("Movie Names Array:", movies);
