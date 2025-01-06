@@ -5,10 +5,11 @@ const urlParams = new URLSearchParams(queryString);
 const movieId = urlParams.get('id'); // 'id' is the name of the parameter passed
 console.log(movieId)
 
+console.log(queryString);
+
 // Log the movie ID (for testing purposes)
 console.log("Movie ID:", movieId);
 
-<<<<<<< HEAD
 const related_movie = document.getElementById("related_movie");
 related_movie.style.display = "none"
 
@@ -18,20 +19,20 @@ back.addEventListener("click" , () => {
   window.location.replace("/assets/Pages/html/front.html");
 });
 
+const video = document.getElementById("video");
 const rent =document.getElementById("rent");
 rent.style.display = "none";
-rent.addEventListener("click" , () => {
+video.style.display = "none";
 
-  window.location.href="/assets/Pages/html/rent.html";
-});
 
 // const watchlist = document.getElementById("watchlist");
 // watchlist.style.display = "none"
 // watchlist.addEventListener("click" , () => {
 //   alert("this movie add to watchlist")
-// });
-=======
->>>>>>> f9b07b40e7914539a41e4bcc77875210d89323c1
+  
+// })
+
+
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
 import { getFirestore, doc, setDoc,collection } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
@@ -71,16 +72,7 @@ async function uploadJSONToFirebase() {
       await setDoc(docRef, { movies: categoryData });
       console.log(`Uploaded category: ${category}`);
     }
-<<<<<<< HEAD
 
-=======
-    
-    const back = document.getElementById("back")
-    back.style.display="none"
-    back.addEventListener("click" , () => {
-      window.location.replace("/assets/Pages/html/front.html")
-    })
->>>>>>> f9b07b40e7914539a41e4bcc77875210d89323c1
 
     // Ensure movieId is valid before proceeding
     if (!movieId) {
@@ -98,11 +90,7 @@ async function uploadJSONToFirebase() {
       if (movieDetails) break; // Exit loop once movie is found
     }
 
-<<<<<<< HEAD
     if (movieDetails){
-=======
-    if (movieDetails) {
->>>>>>> f9b07b40e7914539a41e4bcc77875210d89323c1
       const movieDetailContainer = document.getElementById("movieDetailContainer");
       movieDetailContainer.style.background = `
         linear-gradient(0deg, rgba(0,0,0,1) 20%, rgba(0,0,0,0) 100%),
@@ -114,25 +102,17 @@ async function uploadJSONToFirebase() {
       movieDetailContainer.innerHTML = `
         <h1 class="movie_name" >${movieDetails.movie_name}</h1>
         <p class="movie_description" >${movieDetails.description}</p>
-<<<<<<< HEAD
-=======
-        <button class="watch_now" > <i class="fa-solid fa-play"></i> Watch Now </button>
->>>>>>> f9b07b40e7914539a41e4bcc77875210d89323c1
          <h2 class="cast">Cast</h2>
         <p class="movie_cast">${movieDetails.cast}</p>
       `;
     } else {
       console.error("Movie not found!");
     }
-<<<<<<< HEAD
 
     // watchlist.style.display = "block"
     rent.style.display = "block";
     related_movie.style.display = "block";
     back.style.display="block";
-=======
-     back.style.display="block"
->>>>>>> f9b07b40e7914539a41e4bcc77875210d89323c1
     document.getElementById("loading-container").style.display = 'none';
 
 const thriller_movie_container = document.getElementById("thrillerMoviesContainer");
@@ -187,6 +167,16 @@ data.category.romance.forEach(movie => {
       </a>`;
 });
 
+rent.addEventListener("click" , () => {
+  video.style.display = "block";
+  video.append =   
+  video.innerHTML += `    
+<video controls width="100%" height="750" poster="${movieDetails.poster}">
+  <source src="${movieDetails.trailer}" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+`;  
+});
 
 
   } catch (error) {
@@ -196,8 +186,4 @@ data.category.romance.forEach(movie => {
 
 
 // Call the function
-<<<<<<< HEAD
 uploadJSONToFirebase();
-=======
-uploadJSONToFirebase();
->>>>>>> f9b07b40e7914539a41e4bcc77875210d89323c1
