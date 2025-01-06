@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> f9b07b40e7914539a41e4bcc77875210d89323c1
 // Toggle profile dropdown
 const profileIcon = document.getElementById("profileIcon");
 profileIcon.addEventListener("click", function() {
@@ -22,10 +25,28 @@ const logoutButton = document.getElementById("logoutButton");
 logoutButton.addEventListener("click", function() {
     sessionStorage.clear();
     alert("Logged out successfully!");
+<<<<<<< HEAD
   
     // Set logout to true
     logout = true;
 
+=======
+
+    if ('caches' in window) {
+      caches.keys().then(function (keyList) {
+          return Promise.all(
+              keyList.map(function (key) {
+                  return caches.delete(key); // Clears browser cache
+              })
+          );
+      });
+  }    
+
+    // Set logout to true
+    logout = true;
+
+
+>>>>>>> f9b07b40e7914539a41e4bcc77875210d89323c1
     // Redirect to the index or login page
     window.location.replace("/index.html");
 });
@@ -279,7 +300,11 @@ if (storedUsername) {
       
       resultsContainer.style.display = "block"; // Show results
     } else {
+<<<<<<< HEAD
       resultsContainer.textContent = "No Results Found.";
+=======
+      resultsContainer.textContent = "No results found.";
+>>>>>>> f9b07b40e7914539a41e4bcc77875210d89323c1
       resultsContainer.style.color = "black";
       resultsContainer.style.textAlign = "center";
       resultsContainer.style.backgroundColor = "white"
@@ -315,6 +340,7 @@ if (storedUsername) {
  clear_icon.addEventListener("click" , () => {
   searchBar.value = "";
   resultsContainer.style.display = "none"
+<<<<<<< HEAD
   clear_icon.style.display = "none"
  })
   
@@ -325,6 +351,10 @@ searchBar.addEventListener("click", () => {
     clear_icon.style.display = "block"
     }
 })
+=======
+ })
+  
+>>>>>>> f9b07b40e7914539a41e4bcc77875210d89323c1
 
   console.log("movie id:",id);
   console.log("Movie Names Array:", movies);
