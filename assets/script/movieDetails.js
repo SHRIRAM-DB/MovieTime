@@ -16,7 +16,7 @@ related_movie.style.display = "none"
 const back = document.getElementById("back")
 back.style.display="none"
 back.addEventListener("click" , () => {
-  window.location.replace("/assets/Pages/html/front.html");
+  window.location.href = "/assets/Pages/html/front.html";
 });
 
 const video = document.getElementById("video");
@@ -168,6 +168,7 @@ data.category.romance.forEach(movie => {
 });
 
 rent.addEventListener("click" , () => {
+  rent.style.display = "none";
   video.style.display = "block";
   video.append =   
   video.innerHTML += `    

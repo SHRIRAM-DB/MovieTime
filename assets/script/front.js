@@ -8,12 +8,12 @@ profileIcon.addEventListener("click", function() {
 });
 
 // Close the dropdown if clicked outside
-window.addEventListener("click", function(event) {
-    const dropdown = document.getElementById("profileDropdown");
-    if (dropdown.style.display === "block" && !event.target.closest('#profileIcon')) {
-        dropdown.style.display = 'none';
-    }
-});
+// window.addEventListener("click", function(event) {
+//     const dropdown = document.getElementById("profileDropdown");
+//     if (dropdown.style.display === "block" && !event.target.closest('#profileIcon')) {
+//         dropdown.style.display = 'none';
+//     }
+// });
 
 let logout = false;
 
@@ -61,6 +61,7 @@ const id=[];
   const db = getFirestore(app);
   
   // Function to upload JSON to Firebase and render movies
+
   async function uploadJSONToFirebase() {
       try {
           const response = await fetch('/assets/json/front.json');
