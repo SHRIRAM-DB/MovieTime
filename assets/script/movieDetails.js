@@ -32,8 +32,6 @@ video.style.display = "none";
   
 // })
 
-
-
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
 import { getFirestore, doc, setDoc,collection } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
 
@@ -103,6 +101,7 @@ async function uploadJSONToFirebase() {
         <h1 class="movie_name" >${movieDetails.movie_name}</h1>
         <p class="movie_description" >${movieDetails.description}</p>
          <h2 class="cast">Cast</h2>
+         <p class="crew"> ${movieDetails.crew} </p>
         <p class="movie_cast">${movieDetails.cast}</p>
       `;
     } else {

@@ -21,6 +21,12 @@ overflow-x: hidden;
   position: absolute;
 }
 
+.crew{
+  position: absolute;
+  bottom: 210px;
+  left: 250px;
+  font-size: larger;
+}
 
 #back{
 cursor: pointer;
@@ -50,18 +56,20 @@ margin-top: 15px;
 }
 
 .movie_description{
-text-align: center;
 padding-top: 630px;
-font-family: sans-serif;
+font-size: large;
 position: relative;
-bottom: 40px;
+bottom: 50px;
+margin-left: 250px;
+margin-right: 450px;
 }
 
 .movie_name{
-  margin: 0;
   position: relative;
-  top: 550px;
-  left: 60px;
+  top: 540px;
+  left: 250px;
+  font-weight: bold;
+  font-size: 50px;
 }
 
 .rent{
@@ -73,15 +81,11 @@ border-radius: 10px;
 position: absolute;
 font-size: x-large;
 font-weight: bold;
-bottom: 90px;
+bottom: 225px;
 cursor: pointer;
 left: 40px;
 }
 
-.rent:active{
-  transition: transform 0.3s ease-in-out;
-  transform: scale(0.7);
-}
 
 #watchlist{
   padding: 15px;
@@ -105,15 +109,16 @@ left: 40px;
 }
 
 .movie_cast{
-padding-left: 950px;
+padding-left: 1100px;
 position: relative;
-bottom: 20px
+bottom: 140px
+
 }
 
 .cast{
-padding-left: 950px;
+padding-left: 1100px;
 position: relative;
-bottom: 20px;
+bottom: 150px;
 }
 
 .loading-container {

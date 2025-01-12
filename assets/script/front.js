@@ -71,7 +71,7 @@ const id=[];
           const data = await response.json();
   
           // Upload data to Firestore
-          for (const category in data.category) {
+          for (const category in data.category){
               const categoryData = data.category[category];
               const docRef = doc(db, "categories", category);
               await setDoc(docRef, { movies: categoryData });
