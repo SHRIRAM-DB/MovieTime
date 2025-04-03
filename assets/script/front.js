@@ -39,26 +39,6 @@ if (logout) {
 
 const movies = []; 
 const id=[];  
-
-  // Import the functions you need from the SDKs you need
-  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
-  import { getFirestore, doc, setDoc,collection } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
-  
-  // Firebase configuration
-  
-  const firebaseConfig = {
-      apiKey: "AIzaSyDzQ4VrfxpuRao5WpeBHnl8TStgz8q3KOw",
-      authDomain: "ott-website-6e998.firebaseapp.com",
-      projectId: "ott-website-6e998",
-      storageBucket: "ott-website-6e998.appspot.com",
-      messagingSenderId: "353375757349",
-      appId: "1:353375757349:web:28b95a40337351d3994bcc",
-      measurementId: "G-NVSXR5MKPX"
-  };
-  
-  // Initialize Firebase
-  const app = initializeApp(firebaseConfig);
-  const db = getFirestore(app);
   
   // Function to upload JSON to Firebase and render movies
 
@@ -69,15 +49,6 @@ const id=[];
             throw new Error("JSON file not found!");
           } 
           const data = await response.json();
-  
-          // Upload data to Firestore
-          for (const category in data.category){
-              const categoryData = data.category[category];
-              const docRef = doc(db, "categories", category);
-              await setDoc(docRef, { movies: categoryData });
-              console.log(`Uploaded category: ${category}`);
-          }
-          
           
   const movieSlideContainer = document.getElementById("movieSlideContainer");
   const prevButton = document.getElementById("prevButton");
